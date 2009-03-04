@@ -12,13 +12,14 @@
 /// private methods
 
 + (NSString*)URLForTwitterWithAccount {
-	return @"http://twitter.com/";
+//	return @"http://twitter.com/";
+	return @"http://api.jiwai.de/";
 }
 
 - (void)getTimeline:(NSString*)path page:(int)page count:(int)count since_id:(NSString*)since_id forceGet:(BOOL)forceGet {
 	NSString* url = [NSString stringWithFormat:@"%@%@.xml?count=%d", 
 					 [NTLNTwitterClient URLForTwitterWithAccount], path, count];
-		
+		NSLog(@"getting timeline: %@", url);
 	if (page >= 2) {
 		url = [NSString stringWithFormat:@"%@&page=%d", url, page];
 	} else if (since_id) {
@@ -50,13 +51,14 @@
 }
 
 - (void)requestSucceeded {
-
+	NSLog(@"TwitterClient#requestSucceeded");
 	if (statusCode == 200) {
 		if (parseResultXML) {
 			if (contentTypeIsXml) {
 				NTLNTwitterXMLReader *xr = [[NTLNTwitterXMLReader alloc] init];
+				NSLog(@"got receivedData");
 				[xr parseXMLData:recievedData];
-				
+//				NSLog(@"parsed xml: %@", xr.messages);
 				if ([xr.messages count] > 0) {
 					[delegate twitterClientSucceeded:self messages:xr.messages];
 				} else {

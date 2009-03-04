@@ -28,6 +28,8 @@
 }
 
 - (void)didParseMessage:(NTLNMessage*)message iconURL:(NSString*)iconURL {
+	NSLog(@"didParseMessage: %@", message.text);
+	NSLog(@"with iconURL: %@", iconURL);
 	[message setIconForURL:iconURL];
 	if ([currentInReplyToUserId isEqualToString:[[NTLNAccount instance] userId]]) {
 		message.replyType = NTLN_MESSAGE_REPLY_TYPE_REPLY;
@@ -35,6 +37,7 @@
 		[message finishedToSetProperties:currentMsgDirectMessage];
 	}
 	[messages addObject:message];
+	NSLog(@"added message to messages");
 }
 
 - (void)dealloc {
@@ -74,8 +77,15 @@
 				[elementName isEqualToString:@"name"] ||
 				[elementName isEqualToString:@"screen_name"] ||
 				[elementName isEqualToString:@"in_reply_to_user_id"] ||
-			   [elementName isEqualToString:@"profile_image_url"]) {
+			   [elementName isEqualToString:@"profile_image_url"] ||
+			   [elementName isEqualToString:@"sender_id"] ||
+			   [elementName isEqualToString:@"recipient_id"] ||
+			   [elementName isEqualToString:@"sender_screen_name"] ||
+			   [elementName isEqualToString:@"recipient_screen_name"] ||
+			   [elementName isEqualToString:@"sender_profile_url"] ||
+			   [elementName isEqualToString:@"recipient_profile_url"]) {
 		readText = YES;
+		NSLog(@"reading text for %@", elementName);
 		currentStringValue = [[NSMutableString alloc] initWithCapacity:50];
 	}
 }
@@ -121,6 +131,10 @@
 				}
 			} else if ([elementName isEqualToString:@"in_reply_to_user_id"]) {
 				currentInReplyToUserId = [currentStringValue copy];
+			} else if ([elementName isEqualToString:@"sender_profile_url"]) {
+				NSLog(@"current ending elementName: %@", elementName);
+				NSLog(@"current string value: %@", currentStringValue);
+				currentIconURL = @"not available";
 			}
 		}
 

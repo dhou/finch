@@ -18,7 +18,8 @@
 }
 
 - (void)getUserInfo:(NSString*)q {
-	NSString *url = [NSString stringWithFormat:@"http://twitter.com/users/show/%@.xml", q];
+//	NSString *url = [NSString stringWithFormat:@"http://twitter.com/users/show/%@.xml", q];
+	NSString *url = [NSString stringWithFormat:@"http://api.jiwai.de/users/show/%@.xml", q];
 	[super requestGET:url];
 }
 

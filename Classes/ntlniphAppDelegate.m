@@ -58,25 +58,25 @@
 	[tabBarController setViewControllers:
 		[NSArray arrayWithObjects:nfri, nrep, nsen, nunr, nset, nil]];
 	
-	[nfri.navigationBar setBarStyle:UIBarStyleBlackOpaque];
+	[nfri.navigationBar setBarStyle:UIBarStyleBlackTranslucent];
 	[nfri.tabBarItem setTitle:@"Friends"];
 	[nfri.tabBarItem setImage:[UIImage imageNamed:@"friends.png"]];
 	friendsViewController.tabBarItem = nfri.tabBarItem; // is it need (to show badge)?
 	
-	[nrep.navigationBar setBarStyle:UIBarStyleBlackOpaque];
+	[nrep.navigationBar setBarStyle:UIBarStyleBlackTranslucent];
 	[nrep.tabBarItem setTitle:@"Replies"];
 	[nrep.tabBarItem setImage:[UIImage imageNamed:@"replies.png"]];
 	replysViewController.tabBarItem  = nrep.tabBarItem; // is it need (to show badge)?
 
-	[nsen.navigationBar setBarStyle:UIBarStyleBlackOpaque];
+	[nsen.navigationBar setBarStyle:UIBarStyleBlackTranslucent];
 	[nsen.tabBarItem setTitle:@"Sents"];
 	[nsen.tabBarItem setImage:[UIImage imageNamed:@"sent.png"]];
 
-	[nunr.navigationBar setBarStyle:UIBarStyleBlackOpaque];
+	[nunr.navigationBar setBarStyle:UIBarStyleBlackTranslucent];
 	[nunr.tabBarItem setTitle:@"Unreads"];
 	[nunr.tabBarItem setImage:[UIImage imageNamed:@"unread.png"]];
 	
-	[nset.navigationBar setBarStyle:UIBarStyleBlackOpaque];
+	[nset.navigationBar setBarStyle:UIBarStyleBlackTranslucent];
 	[nset.tabBarItem setTitle:@"Settings"];
 	[nset.tabBarItem setImage:[UIImage imageNamed:@"setting.png"]];
 }

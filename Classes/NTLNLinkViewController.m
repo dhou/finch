@@ -67,7 +67,8 @@
 
 	[messageOwnerUrl release];
 	messageOwnerUrl = [[NTLNURLPair alloc] init];
-	messageOwnerUrl.url = [@"http://twitter.com/" stringByAppendingString:message.screenName];
+//	messageOwnerUrl.url = [@"http://twitter.com/" stringByAppendingString:message.screenName];
+	messageOwnerUrl.url = [@"http://jiwai.de/" stringByAppendingString:message.screenName];
 	messageOwnerUrl.text = [@"@" stringByAppendingString:message.screenName];
 	
 	[(UITableView*)self.view reloadData];
@@ -333,7 +334,8 @@
 			NTLNURLPair *pair = [[NTLNURLPair alloc] init];
 			pair.text = [NSString stringWithFormat:@"@%@ + %@", message.screenName, token];
 			pair.screenName = [token substringFromIndex:1];
-			pair.url = [@"http://twitter.com/" stringByAppendingString:pair.screenName];
+//			pair.url = [@"http://twitter.com/" stringByAppendingString:pair.screenName];
+			pair.url = [@"http://jiwai.de/" stringByAppendingString:pair.screenName];
 			[urls addObject:pair];
 			[pair release];
         }

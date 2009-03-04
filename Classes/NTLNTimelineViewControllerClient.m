@@ -58,7 +58,7 @@ static int compareStatus(NTLNStatus *a, NTLNStatus *b, void *ptr)
 #pragma mark NTLNTwitterClientDelegate
 
 - (void)twitterClientSucceeded:(NTLNTwitterClient*)sender messages:(NSArray*)statuses {
-	
+//	NSLog(@"TimelineViewControllerClient#twitterClientSucceeded with statuses: %@", statuses);
 	if (sender && sender.requestPage == 0) {
 		[self saveCache:sender];
 	}
@@ -70,7 +70,7 @@ static int compareStatus(NTLNStatus *a, NTLNStatus *b, void *ptr)
 		for (NTLNMessage *msg in statuses) {
 			NTLNStatus *status = [[NTLNStatus alloc] initWithMessage:msg];
 			status.statusRead = self;
-			
+			NSLog(@"Got status: %@", status.message.text);
 			BOOL inserted = [self insertStatusToSortedTimeline:status];
 			if (inserted) {
 				if (! always_read_tweets) {
