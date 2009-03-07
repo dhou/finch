@@ -13,6 +13,7 @@
 @interface NTLNAppDelegate : NSObject <UIApplicationDelegate, UITabBarControllerDelegate, NTLNCacheCleanerDelegate> {
 	IBOutlet UIWindow *window;
 	IBOutlet UITabBarController *tabBarController;
+	UINavigationController *navController;
 	
 	NTLNFriendsViewController *friendsViewController;
 	NTLNReplysViewController *replysViewController;
@@ -29,6 +30,7 @@
 
 @property (nonatomic, retain) UIWindow *window;
 @property (nonatomic, retain) UITabBarController *tabBarController;
+@property (nonatomic, retain) UINavigationController *navController;
 @property (readonly) BOOL applicationActive;
 @property (readonly) NTLNBrowserViewController *browserViewController;
 @property (readonly) NTLNTweetPostViewController *tweetPostViewController;

@@ -10,6 +10,10 @@
 		1D3623260D0F684500981E51 /* ntlniphAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* ntlniphAppDelegate.m */; };
 		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
 		28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28AD733E0D9D9553002E5188 /* MainWindow.xib */; };
+		8B1A736C0F5E8ABF00E7DE1A /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B1A736B0F5E8ABF00E7DE1A /* SettingsViewController.m */; };
+		8B1A75340F5FDD0100E7DE1A /* NTLNContainerCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B1A75330F5FDD0100E7DE1A /* NTLNContainerCell.m */; };
+		8B1A76610F612F8200E7DE1A /* AccountManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B1A76600F612F8200E7DE1A /* AccountManager.m */; };
+		8B1A77450F614D5700E7DE1A /* NewAccountViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B1A77440F614D5700E7DE1A /* NewAccountViewController.m */; };
 		8D1B908D0E3A009500916B34 /* NTLNRoundedIconView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D1B908C0E3A009500916B34 /* NTLNRoundedIconView.m */; };
 		8D1B91930E3A0FCF00916B34 /* NTLNColors.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D1B91920E3A0FCF00916B34 /* NTLNColors.m */; };
 		8D2B8F0E0E9E32EF00D073D8 /* NTLNTimelineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D2B8F0D0E9E32EF00D073D8 /* NTLNTimelineViewController.m */; };
@@ -83,10 +87,18 @@
 /* Begin PBXFileReference section */
 		1D3623240D0F684500981E51 /* ntlniphAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ntlniphAppDelegate.h; sourceTree = "<group>"; };
 		1D3623250D0F684500981E51 /* ntlniphAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ntlniphAppDelegate.m; sourceTree = "<group>"; };
-		1D6058910D05DD3D006BFB54 /* ntlniph.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ntlniph.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1D6058910D05DD3D006BFB54 /* Finch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Finch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		28AD733E0D9D9553002E5188 /* MainWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainWindow.xib; sourceTree = "<group>"; };
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		32CA4F630368D1EE00C91783 /* ntlniph_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ntlniph_Prefix.pch; sourceTree = "<group>"; };
+		8B1A736A0F5E8ABF00E7DE1A /* SettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsViewController.h; sourceTree = "<group>"; };
+		8B1A736B0F5E8ABF00E7DE1A /* SettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsViewController.m; sourceTree = "<group>"; };
+		8B1A75320F5FDD0100E7DE1A /* NTLNContainerCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NTLNContainerCell.h; sourceTree = "<group>"; };
+		8B1A75330F5FDD0100E7DE1A /* NTLNContainerCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NTLNContainerCell.m; sourceTree = "<group>"; };
+		8B1A765F0F612F8200E7DE1A /* AccountManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AccountManager.h; sourceTree = "<group>"; };
+		8B1A76600F612F8200E7DE1A /* AccountManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AccountManager.m; sourceTree = "<group>"; };
+		8B1A77430F614D5700E7DE1A /* NewAccountViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewAccountViewController.h; sourceTree = "<group>"; };
+		8B1A77440F614D5700E7DE1A /* NewAccountViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewAccountViewController.m; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8D1B908B0E3A009500916B34 /* NTLNRoundedIconView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NTLNRoundedIconView.h; sourceTree = "<group>"; };
 		8D1B908C0E3A009500916B34 /* NTLNRoundedIconView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NTLNRoundedIconView.m; sourceTree = "<group>"; };
@@ -233,7 +245,7 @@
 		19C28FACFE9D520D11CA2CBB /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				1D6058910D05DD3D006BFB54 /* ntlniph.app */,
+				1D6058910D05DD3D006BFB54 /* Finch.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -286,6 +298,12 @@
 		8D6278360E7C4BD500CF345E /* configViews */ = {
 			isa = PBXGroup;
 			children = (
+				8B1A75320F5FDD0100E7DE1A /* NTLNContainerCell.h */,
+				8B1A75330F5FDD0100E7DE1A /* NTLNContainerCell.m */,
+				8B1A736A0F5E8ABF00E7DE1A /* SettingsViewController.h */,
+				8B1A77430F614D5700E7DE1A /* NewAccountViewController.h */,
+				8B1A77440F614D5700E7DE1A /* NewAccountViewController.m */,
+				8B1A736B0F5E8ABF00E7DE1A /* SettingsViewController.m */,
 				F134232C0E12AE9F00F2AF64 /* NTLNConfigViewController.h */,
 				F134232D0E12AE9F00F2AF64 /* NTLNConfigViewController.m */,
 				F1FB3C180E17055600534978 /* NTLNRefleshIntervalConfigViewController.h */,
@@ -409,9 +427,17 @@
 		F1216B9B0E04C37F0073A653 /* models */ = {
 			isa = PBXGroup;
 			children = (
+				8B1A765F0F612F8200E7DE1A /* AccountManager.h */,
+				8B1A76600F612F8200E7DE1A /* AccountManager.m */,
 				8DC3F3670E619B810045A4AD /* network */,
+				8DBA55DB0E98F2B300109F5D /* NTLNAccelerometerSensor.h */,
+				8DBA55DC0E98F2B300109F5D /* NTLNAccelerometerSensor.m */,
 				F1216B9E0E04C37F0073A653 /* NTLNAccount.h */,
 				F1216B9F0E04C37F0073A653 /* NTLNAccount.m */,
+				8DBBB31D0E4343AE00638CB3 /* NTLNCache.h */,
+				8DBBB31E0E4343AE00638CB3 /* NTLNCache.m */,
+				8DBA58910E9A89AE00109F5D /* NTLNCacheCleaner.h */,
+				8DBA58920E9A89AE00109F5D /* NTLNCacheCleaner.m */,
 				F1216BA40E04C37F0073A653 /* NTLNConfiguration.h */,
 				F1216BA50E04C37F0073A653 /* NTLNConfiguration.m */,
 				F1216BA60E04C37F0073A653 /* NTLNIconRepository.h */,
@@ -419,21 +445,15 @@
 				F1216BA80E04C37F0073A653 /* NTLNMessage.h */,
 				F1216BA90E04C37F0073A653 /* NTLNMessage.m */,
 				F1216BAA0E04C37F0073A653 /* NTLNNotification.h */,
-				F1216BAB0E04C37F0073A653 /* NTLNUser.h */,
-				F1216BAC0E04C37F0073A653 /* NTLNUser.m */,
-				F17419730E2A3A46008BA863 /* NTLNTwitterXMLReader.h */,
-				F17419740E2A3A46008BA863 /* NTLNTwitterXMLReader.m */,
 				8D988F5A0E84174B00AA6845 /* NTLNTwitterUserXMLReader.h */,
 				8D988F5B0E84174B00AA6845 /* NTLNTwitterUserXMLReader.m */,
-				8DBBB31D0E4343AE00638CB3 /* NTLNCache.h */,
-				8DBBB31E0E4343AE00638CB3 /* NTLNCache.m */,
+				F17419730E2A3A46008BA863 /* NTLNTwitterXMLReader.h */,
+				F17419740E2A3A46008BA863 /* NTLNTwitterXMLReader.m */,
+				F1216BAB0E04C37F0073A653 /* NTLNUser.h */,
+				F1216BAC0E04C37F0073A653 /* NTLNUser.m */,
 				8D90FDC80E5F224F005A0CE6 /* Reachability.h */,
 				8D90FDC70E5F224F005A0CE6 /* Reachability.m */,
 				F1216BAF0E04C37F0073A653 /* util */,
-				8DBA55DB0E98F2B300109F5D /* NTLNAccelerometerSensor.h */,
-				8DBA55DC0E98F2B300109F5D /* NTLNAccelerometerSensor.m */,
-				8DBA58910E9A89AE00109F5D /* NTLNCacheCleaner.h */,
-				8DBA58920E9A89AE00109F5D /* NTLNCacheCleaner.m */,
 			);
 			path = models;
 			sourceTree = "<group>";
@@ -466,7 +486,7 @@
 			);
 			name = ntlniph;
 			productName = ntlniph;
-			productReference = 1D6058910D05DD3D006BFB54 /* ntlniph.app */;
+			productReference = 1D6058910D05DD3D006BFB54 /* Finch.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -566,6 +586,10 @@
 				8D2B8F3A0E9E407B00D073D8 /* NTLNTimelineViewControllerClient.m in Sources */,
 				8D2B8F410E9E42A500D073D8 /* NTLNTimelineViewControllerRead.m in Sources */,
 				8D2B8F420E9E42A500D073D8 /* NTLNTimelineViewControllerTableView.m in Sources */,
+				8B1A736C0F5E8ABF00E7DE1A /* SettingsViewController.m in Sources */,
+				8B1A75340F5FDD0100E7DE1A /* NTLNContainerCell.m in Sources */,
+				8B1A76610F612F8200E7DE1A /* AccountManager.m in Sources */,
+				8B1A77450F614D5700E7DE1A /* NewAccountViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -582,7 +606,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = ntlniph_Prefix.pch;
 				INFOPLIST_FILE = Info.plist;
-				PRODUCT_NAME = ntlniph;
+				PRODUCT_NAME = Finch;
 			};
 			name = Debug;
 		};

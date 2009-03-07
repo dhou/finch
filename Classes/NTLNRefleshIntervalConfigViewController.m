@@ -31,10 +31,31 @@ static int index_from_second(int second)
 	return self;
 }
 
-- (void)viewDidLoad {
+- (id)initWithStyle:(UITableViewStyle)style {
+	if (self = [super initWithStyle:style]) {
+		NSLog(@"refresh interval config view initWithStyle");
+	}
+	return self;
+}
+
+//- (void)viewDidLoad {
+//	NSLog(@"[viewDidLoad]Refresh Interview Config view loaded");
+//	selectedIndex = index_from_second([[NTLNConfiguration instance] refreshIntervalSeconds]);
+//}
+
+- (void)loadView {
+	NSLog(@"[loadView]Refresh Interval Config view loaded");
+	[super loadView];
 	selectedIndex = index_from_second([[NTLNConfiguration instance] refreshIntervalSeconds]);
 }
 
+- (void)viewWillAppear:(BOOL)animated {
+	[super viewWillAppear:animated];
+}
+
+- (void)viewDidAppear:(BOOL)animated {
+	[super viewDidAppear:animated];
+}
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
 	// Return YES for supported orientations
@@ -71,6 +92,7 @@ static int index_from_second(int second)
 - (UITableViewCell *)tableView:(UITableView *)tableView 
 		 cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
+	NSLog(@"Getting cell %d for refresh interval config choices", [indexPath row]);
 	static NSString *MyIdentifier = @"MyIdentifier";
 	
 	UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:MyIdentifier];

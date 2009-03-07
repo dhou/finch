@@ -8,11 +8,12 @@
 #import "NTLNConfigViewController.h"
 #import "NTLNCacheCleaner.h"
 #import "NTLNBrowserViewController.h"
+#import "AccountManager.h"
 
 @implementation NTLNAppDelegate
 
 @synthesize window;
-@synthesize tabBarController;
+@synthesize tabBarController, navController;
 @synthesize applicationActive;
 @synthesize browserViewController;
 @synthesize tweetPostViewController;
@@ -42,7 +43,8 @@
 	unreadsViewController.tweetPostViewController = tweetPostViewController;
 	
 	
-	configViewController = [[NTLNConfigViewController alloc] initWithNibName:@"ConfigView" bundle:nil];
+//	configViewController = [[NTLNConfigViewController alloc] initWithNibName:@"ConfigView" bundle:nil];
+	configViewController = [[NTLNConfigViewController alloc] initWithStyle:UITableViewStyleGrouped];
 	
 	UINavigationController *nfri = [[[UINavigationController alloc] 
 										initWithRootViewController:friendsViewController] autorelease];
@@ -57,6 +59,8 @@
 	
 	[tabBarController setViewControllers:
 		[NSArray arrayWithObjects:nfri, nrep, nsen, nunr, nset, nil]];
+	
+	navController = [[UINavigationController alloc] initWithRootViewController:configViewController];
 	
 	[nfri.navigationBar setBarStyle:UIBarStyleBlackTranslucent];
 	[nfri.tabBarItem setTitle:@"Friends"];
@@ -84,17 +88,19 @@
 - (void)startup {
 	[self createViews];
 	
-	if (![[NTLNAccount instance] valid]) {		
-		
-		tabBarController.selectedIndex = 4; // config view
+	if ([[NTLNAccount instance] valid]) {	
+		//TODO: use last used account and push the friends view upon startup
+		NSLog(@"got saved account: %@", [[NTLNAccount instance] username]);
+//		[navController pushViewController:tabBarController animated:YES];
+//		tabBarController.selectedIndex = 0; // friends view
 	}
 	
 	NSString *user_id = [[NTLNAccount instance] userId];
 	if (user_id == nil || [user_id length] == 0) {
-		[[NTLNAccount instance] getUserId];
+		[[NTLNAccount instance] retrieveUserId];
 	}
 	
-	[window addSubview:tabBarController.view];
+	[window addSubview:navController.view];
 	[window makeKeyAndVisible];
 	
 	applicationActive = TRUE;
@@ -123,6 +129,7 @@
 	[tweetPostViewController release];
 	
 	[tabBarController release];
+	[navController release];
 	[window release];
 	[super dealloc];
 }
@@ -147,6 +154,7 @@
 - (void)applicationWillTerminate:(UIApplication *)application {
 	NSLog(@"applicationWillTerminate");
 	[[NTLNCacheCleaner sharedCacheCleaner] shutdown];
+	[[AccountManager sharedInstance] saveAccounts];
 }
 
 @end

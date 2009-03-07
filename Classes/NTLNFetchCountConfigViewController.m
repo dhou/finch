@@ -19,7 +19,12 @@ static int index_from_count(int count)
 
 @implementation NTLNFetchCountConfigViewController
 
-- (void)viewDidLoad {
+//- (void)viewDidLoad {
+//	selectedIndex = index_from_count([[NTLNConfiguration instance] fetchCount]);
+//}
+
+- (void)loadView {
+	[super loadView];
 	selectedIndex = index_from_count([[NTLNConfiguration instance] fetchCount]);
 }
 

@@ -1,23 +1,16 @@
 #import <UIKit/UIKit.h>
 
-@class NTLNFriendsViewController;
+@class NTLNFriendsViewController, NTLNFetchCountConfigViewController, NTLNRefleshIntervalConfigViewController, NTLNAboutViewController, NTLNContainerCell, SettingsViewController;
 
 @interface NTLNConfigViewController : UITableViewController 
 			<UITableViewDelegate, UITableViewDataSource, UITextFieldDelegate> 
 {
-	IBOutlet UITableViewController *refleshIntervalConfigViewController;
-	IBOutlet UITableViewController *aboutViewController;
-	IBOutlet NTLNFriendsViewController *friendsViewController;
-	IBOutlet UITableViewController *fetchCountConfigViewController;
+	NTLNAboutViewController *aboutViewController;
+	NTLNFriendsViewController *friendsViewController;
+	SettingsViewController *settingsController;
 	
-	UITextField *usernameField;
-	UITextField *passwordField;
-	UISwitch *usePostSwitch;
-	UISwitch *useSafariSwitch;
-	UISwitch *darkColorThemeSwitch;
-	UISwitch *scrollLockSwitch;
-	UISwitch *showMoreTweetsModeSwitch;
-	UISwitch *shakeToFullscreenSwitch;
+//	UITextField *usernameField;
+//	UITextField *passwordField;
 	
 	BOOL usernameEdited;
 }
@@ -28,16 +21,6 @@
 - (UITableViewCell*)containerCellWithTitle:(NSString*)title view:(UIView*)view;
 - (UITableViewCell*)textCellWithTitle:(NSString*)title;
 	
-- (void)doneButton:(id)sender;
-
-@end
-
-
-@interface NTLNContainerCell : UITableViewCell
-{
-	UIView *container;
-}
-
-- (void)attachContainer:(UIView*)view;
+//- (void)doneButton:(id)sender;
 
 @end
