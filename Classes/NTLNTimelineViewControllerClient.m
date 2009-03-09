@@ -2,6 +2,7 @@
 #import "NTLNConfiguration.h"
 #import "NTLNAccount.h"
 #import "Reachability.h"
+#import "AccountManager.h"
 
 @implementation NTLNTimelineViewController(Client)
 
@@ -70,7 +71,7 @@ static int compareStatus(NTLNStatus *a, NTLNStatus *b, void *ptr)
 		for (NTLNMessage *msg in statuses) {
 			NTLNStatus *status = [[NTLNStatus alloc] initWithMessage:msg];
 			status.statusRead = self;
-			NSLog(@"Got status: %@", status.message.text);
+//			NSLog(@"Got status: %@", status.message.text);
 			BOOL inserted = [self insertStatusToSortedTimeline:status];
 			if (inserted) {
 				if (! always_read_tweets) {
@@ -184,7 +185,9 @@ static int compareStatus(NTLNStatus *a, NTLNStatus *b, void *ptr)
 }
 
 - (void)getTimelineWithPage:(int)page autoload:(BOOL)autoload {
-	if (activeTwitterClient == nil && [[NTLNAccount instance] valid]) {
+	NSLog(@"[%@]getting timeline with page: %d", [self className], page);
+	NSLog(@"[%@]current account is: %@",[self className], [[AccountManager sharedInstance] currentAccount].username);
+	if (activeTwitterClient == nil && [[[AccountManager sharedInstance] currentAccount] valid]) {
 		[self stopTimer];
 		NSDate *now = [NSDate date];
 		BOOL got = NO;

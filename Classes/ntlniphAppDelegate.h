@@ -35,5 +35,7 @@
 @property (readonly) NTLNBrowserViewController *browserViewController;
 @property (readonly) NTLNTweetPostViewController *tweetPostViewController;
 
+- (void)resetTimelines;
+
 @end
 

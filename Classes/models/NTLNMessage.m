@@ -1,6 +1,7 @@
 #import "NTLNMessage.h"
 #import "NTLNAccount.h"
 #import "NTLNIconRepository.h"
+#import "AccountManager.h"
 
 @implementation NTLNMessage
 
@@ -30,7 +31,7 @@
 }
 
 - (BOOL) isReplyToMe {
-    if ([text hasPrefix:[@"@" stringByAppendingString:[[NTLNAccount instance] username]]]) {
+    if ([text hasPrefix:[@"@" stringByAppendingString:[[AccountManager sharedInstance] currentAccount].username]]) {
         //        NSLog(@"reply");
         return TRUE;
     }
@@ -39,7 +40,7 @@
 }
 
 - (BOOL) isProbablyReplyToMe {
-    NSString *query = [@"@" stringByAppendingString:[[NTLNAccount instance] username]];
+    NSString *query = [@"@" stringByAppendingString:[[AccountManager sharedInstance] currentAccount].username];
     NSRange range = [text rangeOfString:query];
     
     if (range.location != NSNotFound) {
@@ -51,7 +52,7 @@
 }
 
 - (BOOL) isMyUpdate {
-    return [screenName isEqualToString:[[NTLNAccount instance] username]];
+    return [screenName isEqualToString:[[AccountManager sharedInstance] currentAccount].username];
 }
 
 - (void) finishedToSetProperties:(BOOL)forDirectMessage {

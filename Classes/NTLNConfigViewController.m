@@ -11,6 +11,7 @@
 #import "SettingsViewController.h"
 #import "AccountManager.h"
 #import "NewAccountViewController.h"
+#import "ntlniphAppDelegate.h"
 
 @implementation NTLNConfigViewController
 
@@ -91,14 +92,45 @@
 	[self.tableView reloadData];
 }
 
+#pragma mark -
+#pragma mark Cell editing
+
+
+// Override to support conditional editing of the table view.
+- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
+    // Return NO if you do not want the specified item to be editable.
+	if(indexPath.section == 0) {
+		return YES;
+	} else{
+		return NO;
+	}
+}
+
+
+// Override to support editing the table view.
+- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    if (editingStyle == UITableViewCellEditingStyleDelete) {
+        // Delete the row from the data source
+		if(indexPath.row < [[AccountManager sharedInstance] countOfAccounts]){
+			[[AccountManager sharedInstance] removeAccountAtIndex:indexPath.row];
+		}
+        [tableView deleteRowsAtIndexPaths:[NSArray arrayWithObject:indexPath] withRowAnimation:YES];
+    }   
+    else if (editingStyle == UITableViewCellEditingStyleInsert) {
+        // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
+    }   
+}
+
+
 #pragma mark - UITableView delegates
 
 // if you want the entire table to just be re-orderable then just return UITableViewCellEditingStyleNone
 //
-- (UITableViewCellEditingStyle)tableView:(UITableView *)tableView editingStyleForRowAtIndexPath:(NSIndexPath *)indexPath
-{
-	return UITableViewCellEditingStyleNone;
-}
+//- (UITableViewCellEditingStyle)tableView:(UITableView *)tableView editingStyleForRowAtIndexPath:(NSIndexPath *)indexPath
+//{
+//	return UITableViewCellEditingStyleDelete;
+//}
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
@@ -169,8 +201,16 @@
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-	if (indexPath.section == 0 && indexPath.row == [[AccountManager sharedInstance] countOfAccounts]){
-		[[self navigationController] pushViewController:[[NewAccountViewController alloc] initWithStyle:UITableViewStyleGrouped] animated:YES];
+	if (indexPath.section == 0){
+		if (indexPath.row == [[AccountManager sharedInstance] countOfAccounts]) {
+			[[self navigationController] pushViewController:[[NewAccountViewController alloc] initWithStyle:UITableViewStyleGrouped] animated:YES];
+		} else if (indexPath.row < [[AccountManager sharedInstance] countOfAccounts]) {
+			[AccountManager sharedInstance].currentAccountIndex = indexPath.row;
+			NSLog(@"current account is: %@", [[AccountManager sharedInstance] currentAccount].username);
+			NTLNAppDelegate *app = [[UIApplication sharedApplication] delegate];
+			[app resetTimelines];
+			[[self navigationController] pushViewController:[app tabBarController] animated:YES];
+		}
 	} else if (indexPath.section == 1 && indexPath.row == 0) {
 		[[self navigationController] pushViewController:settingsController animated:YES];
 	}else if(indexPath.section == 2 && indexPath.row == 0){
@@ -183,6 +223,15 @@
 //	[passwordField resignFirstResponder];
 //	self.tabBarController.selectedIndex = 0;
 //}
+
+- (void)tableView:(UITableView *)tableView accessoryButtonTappedForRowWithIndexPath:(NSIndexPath *)indexPath {
+		NSLog(@"accessory button clicked for %@", [[AccountManager sharedInstance] getAccountAtIndex:indexPath.row]);
+//	[[self navigationController] pushViewController:blogDetailViewController animated:YES];
+}
+
+
+#pragma mark -
+#pragma mark UI construction helpers
 
 - (BOOL)textFieldShouldBeginEditing:(UITextField *)textField {
 	return YES;

@@ -54,13 +54,14 @@
 										initWithRootViewController:sentsViewController] autorelease];
 	UINavigationController *nunr = [[[UINavigationController alloc] 
 										initWithRootViewController:unreadsViewController] autorelease];
-	UINavigationController *nset = [[[UINavigationController alloc] 
-										initWithRootViewController:configViewController] autorelease];
+//	UINavigationController *nset = [[[UINavigationController alloc] 
+//										initWithRootViewController:configViewController] autorelease];
 	
 	[tabBarController setViewControllers:
-		[NSArray arrayWithObjects:nfri, nrep, nsen, nunr, nset, nil]];
+		[NSArray arrayWithObjects:nfri, nrep, nsen, nunr, nil]];
 	
 	navController = [[UINavigationController alloc] initWithRootViewController:configViewController];
+	[navController.navigationBar setBarStyle:UIBarStyleBlackTranslucent];
 	
 	[nfri.navigationBar setBarStyle:UIBarStyleBlackTranslucent];
 	[nfri.tabBarItem setTitle:@"Friends"];
@@ -80,20 +81,20 @@
 	[nunr.tabBarItem setTitle:@"Unreads"];
 	[nunr.tabBarItem setImage:[UIImage imageNamed:@"unread.png"]];
 	
-	[nset.navigationBar setBarStyle:UIBarStyleBlackTranslucent];
-	[nset.tabBarItem setTitle:@"Settings"];
-	[nset.tabBarItem setImage:[UIImage imageNamed:@"setting.png"]];
+//	[nset.navigationBar setBarStyle:UIBarStyleBlackTranslucent];
+//	[nset.tabBarItem setTitle:@"Settings"];
+//	[nset.tabBarItem setImage:[UIImage imageNamed:@"setting.png"]];
 }
 
 - (void)startup {
 	[self createViews];
 	
-	if ([[NTLNAccount instance] valid]) {	
+//	if ([[NTLNAccount instance] valid]) {	
 		//TODO: use last used account and push the friends view upon startup
-		NSLog(@"got saved account: %@", [[NTLNAccount instance] username]);
+//		NSLog(@"got saved account: %@", [[NTLNAccount instance] username]);
 //		[navController pushViewController:tabBarController animated:YES];
 //		tabBarController.selectedIndex = 0; // friends view
-	}
+//	}
 	
 	NSString *user_id = [[NTLNAccount instance] userId];
 	if (user_id == nil || [user_id length] == 0) {
@@ -132,6 +133,13 @@
 	[navController release];
 	[window release];
 	[super dealloc];
+}
+
+- (void)resetTimelines {
+	[friendsViewController resetTimeline];
+	[replysViewController resetTimeline];
+	[sentsViewController resetTimeline];
+	[unreadsViewController resetTimeline];
 }
 
 - (void)tabBarController:(UITabBarController *)tabBarController 

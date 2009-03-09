@@ -298,20 +298,20 @@
 		8D6278360E7C4BD500CF345E /* configViews */ = {
 			isa = PBXGroup;
 			children = (
-				8B1A75320F5FDD0100E7DE1A /* NTLNContainerCell.h */,
-				8B1A75330F5FDD0100E7DE1A /* NTLNContainerCell.m */,
-				8B1A736A0F5E8ABF00E7DE1A /* SettingsViewController.h */,
 				8B1A77430F614D5700E7DE1A /* NewAccountViewController.h */,
 				8B1A77440F614D5700E7DE1A /* NewAccountViewController.m */,
-				8B1A736B0F5E8ABF00E7DE1A /* SettingsViewController.m */,
-				F134232C0E12AE9F00F2AF64 /* NTLNConfigViewController.h */,
-				F134232D0E12AE9F00F2AF64 /* NTLNConfigViewController.m */,
-				F1FB3C180E17055600534978 /* NTLNRefleshIntervalConfigViewController.h */,
-				F1FB3C190E17055600534978 /* NTLNRefleshIntervalConfigViewController.m */,
-				8D62782D0E7C49CB00CF345E /* NTLNFetchCountConfigViewController.h */,
-				8D62782E0E7C49CB00CF345E /* NTLNFetchCountConfigViewController.m */,
 				8D6786D70E4E187400F06BE3 /* NTLNAboutViewController.h */,
 				8D6786D80E4E187400F06BE3 /* NTLNAboutViewController.m */,
+				F134232C0E12AE9F00F2AF64 /* NTLNConfigViewController.h */,
+				F134232D0E12AE9F00F2AF64 /* NTLNConfigViewController.m */,
+				8B1A75320F5FDD0100E7DE1A /* NTLNContainerCell.h */,
+				8B1A75330F5FDD0100E7DE1A /* NTLNContainerCell.m */,
+				8D62782D0E7C49CB00CF345E /* NTLNFetchCountConfigViewController.h */,
+				8D62782E0E7C49CB00CF345E /* NTLNFetchCountConfigViewController.m */,
+				F1FB3C180E17055600534978 /* NTLNRefleshIntervalConfigViewController.h */,
+				F1FB3C190E17055600534978 /* NTLNRefleshIntervalConfigViewController.m */,
+				8B1A736A0F5E8ABF00E7DE1A /* SettingsViewController.h */,
+				8B1A736B0F5E8ABF00E7DE1A /* SettingsViewController.m */,
 			);
 			name = configViews;
 			sourceTree = "<group>";

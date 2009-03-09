@@ -37,15 +37,17 @@
 }
 
 + (NSData*)loadWithFilename:(NSString*)filename {
+	NSLog(@"NTLNCache loading data from file: %@", filename);
 	NSFileHandle *fh = [NSFileHandle fileHandleForReadingAtPath:filename];
 	NSData *ret = nil;
 	if (fh) {
-//		NSLog(@"Read cache from:%@", filename);
+		NSLog(@"Read cache from:%@", filename);
 		ret = [fh readDataToEndOfFile];
 		[fh closeFile];
 		//[ret retain];
 		//[fh release];
 	}
+	NSLog(@"cache data loaded: %@", [ret description]);
 	return ret;
 }
 

@@ -69,7 +69,7 @@
 - (void)setupTableView;
 - (void)setupNavigationBar;
 - (void)attachOrDetachAutopagerizeView;
-
+- (void)resetTimeline;
 @end
 
 @interface NTLNTimelineViewController(Cache)
@@ -79,7 +79,6 @@
 - (void)saveCache:(NTLNTwitterClient*)sender;
 - (void)loadCacheWithFilename:(NSString*)fn;
 - (void)loadCache;
-
 @end
 
 @interface NTLNTimelineViewController(Timer)

@@ -114,5 +114,9 @@
 	}
 }
 
+- (void)resetTimeline {
+	[timeline removeAllObjects];
+	[self removeLastReloadTime];
+}
 
 @end

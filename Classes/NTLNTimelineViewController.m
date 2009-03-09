@@ -2,6 +2,7 @@
 #import "NTLNColors.h"
 #import	"NTLNConfiguration.h"
 #import "NTLNAccelerometerSensor.h"
+#import "AccountManager.h"
 
 @implementation NTLNTimelineViewController
 
@@ -26,17 +27,21 @@
 }
 
 - (void)viewDidLoad {	
+	NSLog(@"[%@]view did load", [self className]);
 	[self setupTableView];
 	[self setupNavigationBar];
 	
 	
-	[self initialCacheLoading];
+//	[self initialCacheLoading];
+	NTLNAccount *cur = [[AccountManager sharedInstance] currentAccount];
+	NSLog(@"viewDidLoad current username: %@", cur);
 }
 
 - (void)viewWillAppear:(BOOL)animated
 {
 	NSIndexPath *tableSelection = [self.tableView indexPathForSelectedRow];
 	[self.tableView deselectRowAtIndexPath:tableSelection animated:NO];
+	[self initialCacheLoading];
 	[self.tableView reloadData];
 	[self attachOrDetachAutopagerizeView];
 	
@@ -49,6 +54,7 @@
 }
 
 - (void)viewDidAppear:(BOOL)animated {
+	NSLog(@"[%@]view did appear", [self className]);
 	enable_read = TRUE;
 	[self getTimelineWithPage:0 autoload:YES];
 	[self checkCellRead];

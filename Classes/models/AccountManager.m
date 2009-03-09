@@ -7,12 +7,11 @@
 //
 
 #import "AccountManager.h"
-#import "SynthesizeSingleton.h"
 #import "NTLNAccount.h"
 
 @implementation AccountManager
 
-@synthesize accountsList, currentDirectoryPath;
+@synthesize accountsList, currentDirectoryPath, currentAccountIndex;
 
 static AccountManager *_instance;
 
@@ -56,16 +55,34 @@ static AccountManager *_instance;
 	NSLog(@"Now has %d accounts", [accountsList count]);
 }
 
+- (void)removeAccountAtIndex:(NSInteger) index {
+	if(index < [self countOfAccounts]){
+		[[self accountsList] removeObjectAtIndex:index];
+	}
+}
+
+- (NTLNAccount *)getAccountAtIndex:(NSInteger) index{
+	if(index < [accountsList count]) {
+		return [accountsList objectAtIndex:index];
+	} else {
+		return nil;
+	}
+}
+
 - (NSInteger)countOfAccounts {
 	return [accountsList count];
 }
 
+- (NTLNAccount *)currentAccount {
+	return [accountsList objectAtIndex:currentAccountIndex];
+}
+
 // loads saved accounts
 -(void)loadAccounts {
-	NSLog(@"Loading accounts");
+	NSLog(@"AccountManager loading accounts");
 	NSFileManager *fileManager = [NSFileManager defaultManager];
 	NSString *accountsArchivePath = [currentDirectoryPath stringByAppendingPathComponent:@"finch.accounts.archive"];
-	NSLog(@"Load archive path: %@", accountsArchivePath);
+	NSLog(@"AccountManager load archive path: %@", accountsArchivePath);
 	
 	if ([fileManager fileExistsAtPath:accountsArchivePath]) {
 		// set method will release, make mutable copy and retain
@@ -76,10 +93,14 @@ static AccountManager *_instance;
 		self.accountsList = [NSMutableArray array];
 		[self saveAccounts];
 	}
+	NSLog(@"AccountManager loaded %d accounts from archive", [self.accountsList count]);
+	NTLNAccount *a = [self getAccountAtIndex:0];
+	NSLog(@"AccountManager first account from archive: %@", a.username);
+//	[a release];
 }
 
 - (void)saveAccounts {
-	NSLog(@"Saving accounts data");
+	NSLog(@"AccountManager saving accounts data");
 	NSString *accountsFilePath = [currentDirectoryPath stringByAppendingPathComponent:@"finch.accounts.archive"];
 	NSLog(@"Archive path: %@", accountsFilePath);
 	if ([accountsList count] || ([[NSFileManager defaultManager] fileExistsAtPath:accountsFilePath])) {

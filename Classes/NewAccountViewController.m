@@ -41,10 +41,10 @@
 	[[self navigationItem] setRightBarButtonItem:item];
 
 	usernameField = [[NTLNConfigViewController textInputFieldForCellWithValue:
-						[[NTLNAccount instance] username]  secure:NO] retain];
+						@""  secure:NO] retain];
 	usernameField.delegate = self;
 	passwordField = [[NTLNConfigViewController textInputFieldForCellWithValue:
-					 [[NTLNAccount instance] password]  secure:YES] retain];
+					 @""  secure:YES] retain];
 	passwordField.delegate = self;
 	
 	if (usernameField.text.length == 0 && passwordField.text.length == 0) {

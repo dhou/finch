@@ -4,6 +4,7 @@
 #import "NTLNConfiguration.h"
 #import "NTLNTwitterXMLReader.h"
 #import "NTLNAlert.h"
+#import "AccountManager.h"
 
 @implementation NTLNTwitterClient
 
@@ -19,7 +20,7 @@
 - (void)getTimeline:(NSString*)path page:(int)page count:(int)count since_id:(NSString*)since_id forceGet:(BOOL)forceGet {
 	NSString* url = [NSString stringWithFormat:@"%@%@.xml?count=%d", 
 					 [NTLNTwitterClient URLForTwitterWithAccount], path, count];
-		NSLog(@"getting timeline: %@", url);
+	NSLog(@"client getting timeline: %@", url);
 	if (page >= 2) {
 		url = [NSString stringWithFormat:@"%@&page=%d", url, page];
 	} else if (since_id) {
@@ -30,8 +31,12 @@
 	parseResultXML = YES;
 	requestForTimeline = YES;
 	
-	NSString *username = [[NTLNAccount instance] username];
-	NSString *password = [[NTLNAccount instance] password];
+//	NSString *username = [[NTLNAccount instance] username];
+//	NSString *password = [[NTLNAccount instance] password];
+	NSString *username = [[AccountManager sharedInstance] currentAccount].username;
+	NSString *password = [[AccountManager sharedInstance] currentAccount].password;
+	
+	NSLog(@"timeline for usr: %@", username);
 
 	if ( !forceGet && [[NTLNConfiguration instance] usePost]) {
 		[super requestPOST:url body:nil username:username password:password];
@@ -187,8 +192,11 @@
     NSString *postString = [NSString stringWithFormat:@"status=%@&source=NatsuLiphone", 
 							[NTLNXMLHTTPEncoder encodeHTTP:tweet]];
 
-	NSString *username = [[NTLNAccount instance] username];
-	NSString *password = [[NTLNAccount instance] password];
+//	NSString *username = [[NTLNAccount instance] username];
+//	NSString *password = [[NTLNAccount instance] password];
+	
+	NSString *username = [[AccountManager sharedInstance] currentAccount].username;
+	NSString *password = [[AccountManager sharedInstance] currentAccount].password;
 
 	[self requestPOST:url body:postString username:username password:password];
 }
@@ -197,8 +205,11 @@
 	NSString* url = [NSString stringWithFormat:@"%@favorites/create/%@.xml", 
 					 [NTLNTwitterClient URLForTwitterWithAccount], messageId];
 	
-	NSString *username = [[NTLNAccount instance] username];
-	NSString *password = [[NTLNAccount instance] password];
+//	NSString *username = [[NTLNAccount instance] username];
+//	NSString *password = [[NTLNAccount instance] password];
+	
+	NSString *username = [[AccountManager sharedInstance] currentAccount].username;
+	NSString *password = [[AccountManager sharedInstance] currentAccount].password;
 
 	[self requestPOST:url body:nil username:username password:password];
 }
@@ -206,8 +217,11 @@
 - (void)destroyFavoriteWithID:(NSString*)messageId {
 	NSString* url = [NSString stringWithFormat:@"%@favorites/destroy/%@.xml", 
 					 [NTLNTwitterClient URLForTwitterWithAccount], messageId];
-	NSString *username = [[NTLNAccount instance] username];
-	NSString *password = [[NTLNAccount instance] password];
+//	NSString *username = [[NTLNAccount instance] username];
+//	NSString *password = [[NTLNAccount instance] password];
+	
+	NSString *username = [[AccountManager sharedInstance] currentAccount].username;
+	NSString *password = [[AccountManager sharedInstance] currentAccount].password;
 
 	[self requestPOST:url body:nil username:username password:password];
 }

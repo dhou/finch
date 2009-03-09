@@ -4,6 +4,7 @@
 #import "NTLNConfiguration.h"
 #import "ntlniphAppDelegate.h"
 #import "NTLNTweetPostViewController.h"
+#import "AccountManager.h"
 
 #define kLeftMargin				20.0
 #define kTopMargin				20.0
@@ -23,6 +24,7 @@
 }
 
 - (void)initialCacheLoading {
+	NSLog(@"[%@]initial cache loading for user: %@",[self className], [[AccountManager sharedInstance] currentAccount].username);
 	[super initialCacheLoading:@"friends_timeline.xml"];
 	always_read_tweets = NO;
 	badge_enable = YES;
@@ -40,6 +42,7 @@
 }
 
 - (void)viewWillAppear:(BOOL)animated {
+	NSLog(@"friensview will appear, current account: %@", [[AccountManager sharedInstance] currentAccount].username);
 	[self.navigationItem setTitle:TITLE_NAME];
 	[super viewWillAppear:animated];
 }
@@ -61,6 +64,7 @@
 }
 
 - (void)getTimelineImplWithPage:(int)page since_id:(NSString*)since_id {
+	NSLog(@"[%@]getting timeline for friends view", [self className]);
     if (!tweetPostViewController.active && appDelegate.applicationActive) {
 		NTLNTwitterClient *tc = [[NTLNTwitterClient alloc] initWithDelegate:self];
 		[tc getFriendsTimelineWithPage:page since_id:since_id];

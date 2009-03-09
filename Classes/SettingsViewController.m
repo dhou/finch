@@ -246,6 +246,7 @@
 }
 */
 
+#pragma mark cell constructor helpers
 
 - (UITableViewCell*)containerCellWithTitle:(NSString*)title view:(UIView*)view {
 	NSString *MyIdentifier = title;
