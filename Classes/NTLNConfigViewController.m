@@ -200,6 +200,7 @@
 	return nil;
 }
 
+//TODO: update navbar with refresh and new tweet buttons when timeline views are pushed
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
 	if (indexPath.section == 0){
 		if (indexPath.row == [[AccountManager sharedInstance] countOfAccounts]) {

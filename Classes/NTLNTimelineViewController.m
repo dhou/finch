@@ -51,6 +51,8 @@
 	} else {
 		self.tableView.indicatorStyle = UIScrollViewIndicatorStyleBlack;
 	}
+	
+	[self.navigationController setNavigationBarHidden:YES animated:NO];
 }
 
 - (void)viewDidAppear:(BOOL)animated {

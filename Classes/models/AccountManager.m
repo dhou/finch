@@ -62,6 +62,7 @@ static AccountManager *_instance;
 }
 
 - (NTLNAccount *)getAccountAtIndex:(NSInteger) index{
+	NSLog(@"[%@]number of accounts: %d", [self className], [accountsList count]);
 	if(index < [accountsList count]) {
 		return [accountsList objectAtIndex:index];
 	} else {
@@ -95,7 +96,10 @@ static AccountManager *_instance;
 	}
 	NSLog(@"AccountManager loaded %d accounts from archive", [self.accountsList count]);
 	NTLNAccount *a = [self getAccountAtIndex:0];
-	NSLog(@"AccountManager first account from archive: %@", a.username);
+	if (a) {
+		NSLog(@"AccountManager first account from archive: %@", a.username);			
+	}
+
 //	[a release];
 }
 
