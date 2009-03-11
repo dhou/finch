@@ -14,10 +14,12 @@
 
 @implementation NewAccountViewController
 
+@synthesize accountType;
 
 - (id)initWithStyle:(UITableViewStyle)style {
     // Override initWithStyle: if you create the controller programmatically and want to perform customization that is not appropriate for viewDidLoad.
     if (self = [super initWithStyle:style]) {
+		self.title = @"Create Account";
     }
     return self;
 }
@@ -26,6 +28,7 @@
 - (void)dealloc {
 	[usernameField release];
 	[passwordField release];
+	[accountType release];
     [super dealloc];
 }
 
@@ -170,16 +173,19 @@
 */
 
 - (void)saveButton:(id)sender {
+	NSLog(@"Account type: %d", self.accountType);
 	[usernameField resignFirstResponder];
 	[passwordField resignFirstResponder];
 	
 	NTLNAccount *account = [[NTLNAccount alloc] init];
 	account.username = [usernameField.text stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet]];
 	account.password = [passwordField.text stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet]];
+	account.type = self.accountType;
+	NSLog(@"account type set to %d", account.type);
 	[[AccountManager sharedInstance] addAccount:account];
 	[account release];
 	
-	[[self navigationController] popViewControllerAnimated:YES];
+	[[self navigationController] popToRootViewControllerAnimated:YES];
 }
 
 #pragma mark -

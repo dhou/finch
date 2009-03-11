@@ -11,6 +11,7 @@
 #import "SettingsViewController.h"
 #import "AccountManager.h"
 #import "NewAccountViewController.h"
+#import "NewAccountTypeViewController.h"
 #import "ntlniphAppDelegate.h"
 
 @implementation NTLNConfigViewController
@@ -173,7 +174,8 @@
 	{
 		case 0:
 			if(indexPath.row < [[AccountManager sharedInstance] countOfAccounts]) {
-				UITableViewCell *cell = [self textCellWithTitle:[[[AccountManager sharedInstance].accountsList objectAtIndex:indexPath.row] username]];
+				NTLNAccount *account = [[AccountManager sharedInstance].accountsList objectAtIndex:indexPath.row];
+				UITableViewCell *cell = [self textCellWithTitle:[NSString stringWithFormat:@"%@(%@)", account.username, account.type]];
 				cell.accessoryType = UITableViewCellAccessoryDetailDisclosureButton;
 				return cell;
 			} else if ([[AccountManager sharedInstance] countOfAccounts] == 0 ) {
@@ -202,7 +204,9 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
 	if (indexPath.section == 0){
 		if (indexPath.row == [[AccountManager sharedInstance] countOfAccounts]) {
-			[[self navigationController] pushViewController:[[NewAccountViewController alloc] initWithStyle:UITableViewStyleGrouped] animated:YES];
+			NewAccountTypeViewController *accountTypeController = [[NewAccountTypeViewController alloc] initWithStyle:UITableViewStyleGrouped];
+			[[self navigationController] pushViewController:accountTypeController animated:YES];
+			[accountTypeController release];
 		} else if (indexPath.row < [[AccountManager sharedInstance] countOfAccounts]) {
 			[AccountManager sharedInstance].currentAccountIndex = indexPath.row;
 			NSLog(@"current account is: %@", [[AccountManager sharedInstance] currentAccount].username);

@@ -12,7 +12,10 @@
 @interface NewAccountViewController : UITableViewController <UITextFieldDelegate> {
 	UITextField *usernameField;
 	UITextField *passwordField;
+	NSString* accountType;
 }
+
+@property (nonatomic, assign) NSString* accountType;
 
 - (UITableViewCell*)containerCellWithTitle:(NSString*)title view:(UIView*)view;
 

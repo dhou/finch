@@ -32,6 +32,8 @@
 }
 
 - (void)requestSucceeded {
+	NSLog(@"[%@]API request succeeded", [self className]);
+	NSLog(@"[%@]receivedData: %@", [self className], [[self recievedData] description]);
 	if (statusCode == 200) {
 		if (contentTypeIsXml) {
 			NTLNTwitterUserXMLReader *xr = [[NTLNTwitterUserXMLReader alloc] init];
@@ -46,6 +48,7 @@
 }
 
 - (void)requestFailed:(NSError*)error {
+	NSLog(@"[%@]API request failed", [self className]);
 	[delegate twitterUserClientFailed:self];
 	[self autorelease];
 }

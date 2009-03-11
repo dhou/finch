@@ -26,6 +26,7 @@ static AccountManager *_instance;
 
 - (id)init {
 	if(self = [super init]) {
+		currentAccountIndex = 0;
 //		accountsList = [[NSMutableArray alloc] init];
 		// Set current directory for Finch
 		NSFileManager *fileManager = [NSFileManager defaultManager];
@@ -76,9 +77,6 @@ static AccountManager *_instance;
 }
 
 - (NTLNAccount *)currentAccount {
-	if(currentAccountIndex == nil){
-		currentAccountIndex = 0;
-	}
 	return [accountsList objectAtIndex:currentAccountIndex];
 }
 

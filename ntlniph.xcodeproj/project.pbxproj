@@ -16,6 +16,7 @@
 		8B1A77450F614D5700E7DE1A /* NewAccountViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B1A77440F614D5700E7DE1A /* NewAccountViewController.m */; };
 		8B51F3FD0F661CF40028AC0E /* d.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8B51F3FC0F661CF40028AC0E /* d.plist */; };
 		8B51F50C0F6636B50028AC0E /* DeviceFixes.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B51F50B0F6636B50028AC0E /* DeviceFixes.m */; };
+		8B8916790F67B326004E7998 /* NewAccountTypeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B8916780F67B326004E7998 /* NewAccountTypeViewController.m */; };
 		8D1B908D0E3A009500916B34 /* NTLNRoundedIconView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D1B908C0E3A009500916B34 /* NTLNRoundedIconView.m */; };
 		8D1B91930E3A0FCF00916B34 /* NTLNColors.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D1B91920E3A0FCF00916B34 /* NTLNColors.m */; };
 		8D2B8F0E0E9E32EF00D073D8 /* NTLNTimelineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D2B8F0D0E9E32EF00D073D8 /* NTLNTimelineViewController.m */; };
@@ -103,6 +104,9 @@
 		8B51F3FC0F661CF40028AC0E /* d.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = d.plist; sourceTree = "<group>"; };
 		8B51F50A0F6636B50028AC0E /* DeviceFixes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeviceFixes.h; sourceTree = "<group>"; };
 		8B51F50B0F6636B50028AC0E /* DeviceFixes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeviceFixes.m; sourceTree = "<group>"; };
+		8B8916770F67B326004E7998 /* NewAccountTypeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewAccountTypeViewController.h; sourceTree = "<group>"; };
+		8B8916780F67B326004E7998 /* NewAccountTypeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewAccountTypeViewController.m; sourceTree = "<group>"; };
+		8B8917160F67BBC5004E7998 /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Constants.h; path = ../Constants.h; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8D1B908B0E3A009500916B34 /* NTLNRoundedIconView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NTLNRoundedIconView.h; sourceTree = "<group>"; };
 		8D1B908C0E3A009500916B34 /* NTLNRoundedIconView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NTLNRoundedIconView.m; sourceTree = "<group>"; };
@@ -240,6 +244,7 @@
 				8D62786A0E7C4C6700CF345E /* viewUtils */,
 				8B51F50A0F6636B50028AC0E /* DeviceFixes.h */,
 				8B51F50B0F6636B50028AC0E /* DeviceFixes.m */,
+				8B8917160F67BBC5004E7998 /* Constants.h */,
 				1D3623240D0F684500981E51 /* ntlniphAppDelegate.h */,
 				1D3623250D0F684500981E51 /* ntlniphAppDelegate.m */,
 				8DBCE2540E56D08D00E4A1C2 /* version.h */,
@@ -303,6 +308,8 @@
 		8D6278360E7C4BD500CF345E /* configViews */ = {
 			isa = PBXGroup;
 			children = (
+				8B8916770F67B326004E7998 /* NewAccountTypeViewController.h */,
+				8B8916780F67B326004E7998 /* NewAccountTypeViewController.m */,
 				8B1A77430F614D5700E7DE1A /* NewAccountViewController.h */,
 				8B1A77440F614D5700E7DE1A /* NewAccountViewController.m */,
 				8D6786D70E4E187400F06BE3 /* NTLNAboutViewController.h */,
@@ -596,6 +603,7 @@
 				8B1A76610F612F8200E7DE1A /* AccountManager.m in Sources */,
 				8B1A77450F614D5700E7DE1A /* NewAccountViewController.m in Sources */,
 				8B51F50C0F6636B50028AC0E /* DeviceFixes.m in Sources */,
+				8B8916790F67B326004E7998 /* NewAccountTypeViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

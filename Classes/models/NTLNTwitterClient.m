@@ -5,6 +5,7 @@
 #import "NTLNTwitterXMLReader.h"
 #import "NTLNAlert.h"
 #import "AccountManager.h"
+#import "Constants.h"
 
 @implementation NTLNTwitterClient
 
@@ -13,8 +14,15 @@
 /// private methods
 
 + (NSString*)URLForTwitterWithAccount {
-//	return @"http://twitter.com/";
-	return @"http://api.jiwai.de/";
+	NTLNAccount *account = [[AccountManager sharedInstance] currentAccount];
+	if([account.type isEqualToString:ACCOUNT_TWITTER]){
+		return @"http://twitter.com/";
+	} else if([account.type isEqualToString:ACCOUNT_FANFOU]){
+		return @"http://api.fanfou.com/";
+	} else if([account.type isEqualToString:ACCOUNT_JIWAI]){
+		return @"http://api.jiwai.de/";
+	}
+	return @"http://twitter.com/";
 }
 
 - (void)getTimeline:(NSString*)path page:(int)page count:(int)count since_id:(NSString*)since_id forceGet:(BOOL)forceGet {
@@ -61,7 +69,6 @@
 		if (parseResultXML) {
 			if (contentTypeIsXml) {
 				NTLNTwitterXMLReader *xr = [[NTLNTwitterXMLReader alloc] init];
-				NSLog(@"got receivedData");
 				[xr parseXMLData:recievedData];
 //				NSLog(@"parsed xml: %@", xr.messages);
 				if ([xr.messages count] > 0) {

@@ -34,7 +34,7 @@
 
 - (void)initialCacheLoading:(NSString*)name {
 	NTLNAccount *curAccount = [[AccountManager sharedInstance] currentAccount];
-	xmlCachePath = [[NTLNCache createXMLCacheDirectory] stringByAppendingString:[NSString stringWithFormat:@"%@_%@",[curAccount username],name]];
+	xmlCachePath = [[NTLNCache createXMLCacheDirectory] stringByAppendingString:[NSString stringWithFormat:@"%@_%@_%@", curAccount.type, curAccount.username, name]];
 	NSLog(@"initial cache loading from: %@", xmlCachePath);
 //	[curAccount release];
 	[xmlCachePath retain];

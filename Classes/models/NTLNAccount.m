@@ -8,7 +8,7 @@ static NTLNAccount *_instance;
 
 @implementation NTLNAccount
 
-@synthesize username, password, userId;
+@synthesize username, password, userId, type;
 
 + (id) instance {
     if (!_instance) {
@@ -31,6 +31,7 @@ static NTLNAccount *_instance;
 	[username release];
 	[password release];
 	[userId release];
+	[type release];
     [super dealloc];
 }
 
@@ -87,6 +88,7 @@ static NTLNAccount *_instance;
 	[coder encodeObject:username forKey:@"username"];
 	[coder encodeObject:password forKey:@"password"];
 	[coder encodeObject:userId forKey:@"userId"];
+	[coder encodeObject:type forKey:@"type"];
 }
 
 - (id)initWithCoder:(NSCoder *)coder {
@@ -96,6 +98,7 @@ static NTLNAccount *_instance;
 	self.username = [[coder decodeObjectForKey:@"username"] retain];
 	self.password = [[coder decodeObjectForKey:@"password"] retain];
 	self.userId = [[coder decodeObjectForKey:@"userId"] retain];
+	self.type = [[coder decodeObjectForKey:@"type"] retain];
 	return self;
 }
 
