@@ -22,9 +22,9 @@
 		);
 	};
 	29B97313FDCFA39411CA2CEA /* Project object */ = {
-		activeBuildConfigurationName = Debug;
+		activeBuildConfigurationName = Distribution_adhoc;
 		activeExecutable = 8B23998B0F55ABB800F26339 /* Finch */;
-		activeSDKPreference = iphonesimulator2.2.1;
+		activeSDKPreference = iphoneos2.2.1;
 		activeTarget = 1D6058900D05DD3D006BFB54 /* Finch */;
 		addToTargets = (
 			1D6058900D05DD3D006BFB54 /* Finch */,
@@ -839,6 +839,47 @@
 			8B89180A0F67C5EB004E7998 /* PBXTextBookmark */ = 8B89180A0F67C5EB004E7998 /* PBXTextBookmark */;
 			8B89180B0F67C5EB004E7998 /* PBXTextBookmark */ = 8B89180B0F67C5EB004E7998 /* PBXTextBookmark */;
 			8B89180C0F67C600004E7998 /* PBXTextBookmark */ = 8B89180C0F67C600004E7998 /* PBXTextBookmark */;
+			8B8918130F67CA27004E7998 /* PBXTextBookmark */ = 8B8918130F67CA27004E7998 /* PBXTextBookmark */;
+			8B8918140F67CA27004E7998 /* PBXTextBookmark */ = 8B8918140F67CA27004E7998 /* PBXTextBookmark */;
+			8B8918150F67CA27004E7998 /* PBXTextBookmark */ = 8B8918150F67CA27004E7998 /* PBXTextBookmark */;
+			8B8918160F67CA27004E7998 /* PBXTextBookmark */ = 8B8918160F67CA27004E7998 /* PBXTextBookmark */;
+			8B8918170F67CA27004E7998 /* PBXTextBookmark */ = 8B8918170F67CA27004E7998 /* PBXTextBookmark */;
+			8B8918180F67CA27004E7998 /* PBXTextBookmark */ = 8B8918180F67CA27004E7998 /* PBXTextBookmark */;
+			8B8918190F67CA27004E7998 /* PBXTextBookmark */ = 8B8918190F67CA27004E7998 /* PBXTextBookmark */;
+			8B89181A0F67CA27004E7998 /* PBXTextBookmark */ = 8B89181A0F67CA27004E7998 /* PBXTextBookmark */;
+			8B89181B0F67CA27004E7998 /* PBXTextBookmark */ = 8B89181B0F67CA27004E7998 /* PBXTextBookmark */;
+			8B89181C0F67CA27004E7998 /* PBXTextBookmark */ = 8B89181C0F67CA27004E7998 /* PBXTextBookmark */;
+			8B89181D0F67CA27004E7998 /* PBXTextBookmark */ = 8B89181D0F67CA27004E7998 /* PBXTextBookmark */;
+			8B89181E0F67CA27004E7998 /* PBXTextBookmark */ = 8B89181E0F67CA27004E7998 /* PBXTextBookmark */;
+			8B89181F0F67CA27004E7998 /* PBXTextBookmark */ = 8B89181F0F67CA27004E7998 /* PBXTextBookmark */;
+			8B8918200F67CA27004E7998 /* PBXTextBookmark */ = 8B8918200F67CA27004E7998 /* PBXTextBookmark */;
+			8B8918230F67CA27004E7998 /* PBXTextBookmark */ = 8B8918230F67CA27004E7998 /* PBXTextBookmark */;
+			8B8918240F67CA27004E7998 /* PBXTextBookmark */ = 8B8918240F67CA27004E7998 /* PBXTextBookmark */;
+			8B8918260F67CA44004E7998 /* PBXTextBookmark */ = 8B8918260F67CA44004E7998 /* PBXTextBookmark */;
+			8B8918290F67CB81004E7998 /* PBXTextBookmark */ = 8B8918290F67CB81004E7998 /* PBXTextBookmark */;
+			8B89182A0F67CB81004E7998 /* PBXTextBookmark */ = 8B89182A0F67CB81004E7998 /* PBXTextBookmark */;
+			8B89182B0F67CB81004E7998 /* PBXTextBookmark */ = 8B89182B0F67CB81004E7998 /* PBXTextBookmark */;
+			8B89182C0F67CB81004E7998 /* PBXTextBookmark */ = 8B89182C0F67CB81004E7998 /* PBXTextBookmark */;
+			8B89182E0F67CBE2004E7998 /* PBXTextBookmark */ = 8B89182E0F67CBE2004E7998 /* PBXTextBookmark */;
+			8B8918340F67CC31004E7998 /* PBXTextBookmark */ = 8B8918340F67CC31004E7998 /* PBXTextBookmark */;
+			8B8918350F67CC47004E7998 /* PBXTextBookmark */ = 8B8918350F67CC47004E7998 /* PBXTextBookmark */;
+			8B8918360F67CC47004E7998 /* PBXTextBookmark */ = 8B8918360F67CC47004E7998 /* PBXTextBookmark */;
+			8B8918380F67CC47004E7998 /* PBXTextBookmark */ = 8B8918380F67CC47004E7998 /* PBXTextBookmark */;
+			8B89183A0F67CC47004E7998 /* PBXTextBookmark */ = 8B89183A0F67CC47004E7998 /* PBXTextBookmark */;
+			8B89183B0F67CC47004E7998 /* PBXTextBookmark */ = 8B89183B0F67CC47004E7998 /* PBXTextBookmark */;
+			8B89183D0F67CC47004E7998 /* PBXTextBookmark */ = 8B89183D0F67CC47004E7998 /* PBXTextBookmark */;
+			8B89183E0F67CC4E004E7998 /* PBXTextBookmark */ = 8B89183E0F67CC4E004E7998 /* PBXTextBookmark */;
+			8B89183F0F67CC4E004E7998 /* PBXTextBookmark */ = 8B89183F0F67CC4E004E7998 /* PBXTextBookmark */;
+			8B8918400F67CC4E004E7998 /* PBXTextBookmark */ = 8B8918400F67CC4E004E7998 /* PBXTextBookmark */;
+			8B8918410F67CC4E004E7998 /* PBXTextBookmark */ = 8B8918410F67CC4E004E7998 /* PBXTextBookmark */;
+			8B8918490F67CD2A004E7998 /* PBXTextBookmark */ = 8B8918490F67CD2A004E7998 /* PBXTextBookmark */;
+			8B89184A0F67CD2A004E7998 /* PBXTextBookmark */ = 8B89184A0F67CD2A004E7998 /* PBXTextBookmark */;
+			8B89184B0F67CD2A004E7998 /* PBXTextBookmark */ = 8B89184B0F67CD2A004E7998 /* PBXTextBookmark */;
+			8B89184C0F67CD2A004E7998 /* PBXTextBookmark */ = 8B89184C0F67CD2A004E7998 /* PBXTextBookmark */;
+			8B89184D0F67CD2A004E7998 /* PBXTextBookmark */ = 8B89184D0F67CD2A004E7998 /* PBXTextBookmark */;
+			8B89184E0F67CD2A004E7998 /* PBXTextBookmark */ = 8B89184E0F67CD2A004E7998 /* PBXTextBookmark */;
+			8B89184F0F67CD2A004E7998 /* PBXTextBookmark */ = 8B89184F0F67CD2A004E7998 /* PBXTextBookmark */;
+			8B8918500F67CD2A004E7998 /* PBXTextBookmark */ = 8B8918500F67CD2A004E7998 /* PBXTextBookmark */;
 			8BC3C7E90F5C4A76003B77E4 = 8BC3C7E90F5C4A76003B77E4 /* PBXTextBookmark */;
 			8BC3C7F50F5C4B2B003B77E4 = 8BC3C7F50F5C4B2B003B77E4 /* PBXTextBookmark */;
 			8BC3C7F60F5C4B2B003B77E4 = 8BC3C7F60F5C4B2B003B77E4 /* PBXTextBookmark */;
@@ -864,9 +905,10 @@
 	};
 	29B97316FDCFA39411CA2CEA /* main.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1379, 218}}";
-			sepNavSelRange = "{124, 0}";
+			sepNavIntBoundsRect = "{{0, 0}, {861, 746}}";
+			sepNavSelRange = "{25, 35}";
 			sepNavVisRange = "{0, 214}";
+			sepNavWindowFrame = "{{15, -1}, {920, 874}}";
 		};
 	};
 	8B1A71730F5D7E0D00E7DE1A /* PBXTextBookmark */ = {
@@ -903,7 +945,7 @@
 		ignoreCount = 0;
 		lineNumber = 67;
 		location = ntlniph;
-		modificationTime = 258458013.676775;
+		modificationTime = 258461034.880241;
 		state = 2;
 	};
 	8B1A71CC0F5D7E4C00E7DE1A /* NTLNHttpClient.m:160 */ = {
@@ -920,7 +962,7 @@
 		ignoreCount = 0;
 		lineNumber = 160;
 		location = ntlniph;
-		modificationTime = 258458013.676974;
+		modificationTime = 258461034.880454;
 		state = 2;
 	};
 	8B1A71FC0F5D8A2100E7DE1A /* PBXTextBookmark */ = {
@@ -1768,7 +1810,7 @@
 		ignoreCount = 0;
 		lineNumber = 177;
 		location = Finch;
-		modificationTime = 258458013.677164;
+		modificationTime = 258461034.880668;
 		state = 2;
 	};
 	8B1A790F0F62626E00E7DE1A /* PBXTextBookmark */ = {
@@ -2018,9 +2060,10 @@
 		path = "/Users/houyr/Dev/playground/iphone/finch-git/Classes/NTLNTimelineViewControllerCache.m";
 		sourceTree = "<absolute>";
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1036, 672}}";
+			sepNavIntBoundsRect = "{{0, 0}, {1379, 672}}";
 			sepNavSelRange = "{219, 45}";
-			sepNavVisRange = "{0, 760}";
+			sepNavVisRange = "{61, 486}";
+			sepNavWindowFrame = "{{15, -1}, {920, 874}}";
 		};
 	};
 	8B1A7B080F63E77400E7DE1A /* PBXTextBookmark */ = {
@@ -2067,7 +2110,7 @@
 		ignoreCount = 0;
 		lineNumber = 46;
 		location = Finch;
-		modificationTime = 258458013.677435;
+		modificationTime = 258461034.880872;
 		state = 2;
 	};
 	8B1A7BA90F642D8800E7DE1A /* PBXTextBookmark */ = {
@@ -2114,7 +2157,7 @@
 		ignoreCount = 0;
 		lineNumber = 50;
 		location = Finch;
-		modificationTime = 258458013.677654;
+		modificationTime = 258461034.88109;
 		state = 2;
 	};
 	8B1A7D5D0F65247900E7DE1A /* AccountManager.m */ = {
@@ -2143,8 +2186,8 @@
 		ignoreCount = 0;
 		lineNumber = 99;
 		location = Finch;
-		modificationTime = 258458013.677853;
-		state = 2;
+		modificationTime = 258461034.881291;
+		state = 1;
 	};
 	8B1A7DC30F6527EA00E7DE1A /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
@@ -2163,9 +2206,10 @@
 		path = "/Users/houyr/Dev/playground/iphone/finch-git/Classes/NTLNTimelineViewController.m";
 		sourceTree = "<group>";
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1036, 1232}}";
-			sepNavSelRange = "{1058, 12}";
-			sepNavVisRange = "{611, 916}";
+			sepNavIntBoundsRect = "{{0, 0}, {1379, 1314}}";
+			sepNavSelRange = "{659, 0}";
+			sepNavVisRange = "{1363, 398}";
+			sepNavWindowFrame = "{{15, -1}, {920, 874}}";
 		};
 	};
 	8B1A7DCD0F65285E00E7DE1A /* NTLNTimelineViewController.m:58 */ = {
@@ -2182,7 +2226,7 @@
 		ignoreCount = 0;
 		lineNumber = 58;
 		location = Finch;
-		modificationTime = 258458013.67809;
+		modificationTime = 258461034.881528;
 		state = 1;
 	};
 	8B1A7E010F65373900E7DE1A /* PBXTextBookmark */ = {
@@ -2212,9 +2256,9 @@
 		path = "/Users/houyr/Dev/playground/iphone/finch-git/Classes/NTLNTimelineViewControllerClient.m";
 		sourceTree = "<group>";
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1036, 3276}}";
-			sepNavSelRange = "{4712, 73}";
-			sepNavVisRange = "{4507, 769}";
+			sepNavIntBoundsRect = "{{0, 0}, {1379, 3330}}";
+			sepNavSelRange = "{5339, 0}";
+			sepNavVisRange = "{5089, 524}";
 		};
 	};
 	8B1A7E2C0F653F3D00E7DE1A /* NTLNTimelineViewControllerClient.m:201 */ = {
@@ -2231,7 +2275,7 @@
 		ignoreCount = 0;
 		lineNumber = 201;
 		location = Finch;
-		modificationTime = 258458013.678329;
+		modificationTime = 258461034.881742;
 		state = 1;
 	};
 	8B1A7E3A0F65408900E7DE1A /* PBXTextBookmark */ = {
@@ -2289,6 +2333,7 @@
 			8B3BFBF20F66A21C00D874DB /* PBXTextBookmark */,
 			8B8914F70F678764004E7998 /* PBXTextBookmark */,
 			8B8917DF0F67C43D004E7998 /* PBXTextBookmark */,
+			8B8918250F67CA3D004E7998 /* PBXTextBookmark */,
 		);
 		name = Root;
 	};
@@ -2919,7 +2964,7 @@
 		fRef = 8B1A7AD10F63922C00E7DE1A /* NTLNConfigViewController.m */;
 		name = "NTLNConfigViewController.m: 211";
 		rLen = 16;
-		rLoc = 7546;
+		rLoc = 7539;
 		rType = 0;
 		vrLen = 1440;
 		vrLoc = 6221;
@@ -3608,7 +3653,7 @@
 		fRef = 8B8915830F67A316004E7998 /* NTLNConfigViewController.m */;
 		name = "NTLNConfigViewController.m: 209";
 		rLen = 72;
-		rLoc = 7393;
+		rLoc = 7386;
 		rType = 0;
 		vrLen = 1531;
 		vrLoc = 6372;
@@ -3718,7 +3763,7 @@
 		fRef = 8B8915830F67A316004E7998 /* NTLNConfigViewController.m */;
 		name = "NTLNConfigViewController.m: 209";
 		rLen = 72;
-		rLoc = 7393;
+		rLoc = 7386;
 		rType = 0;
 		vrLen = 1531;
 		vrLoc = 6372;
@@ -3738,7 +3783,7 @@
 		fRef = 8B8915830F67A316004E7998 /* NTLNConfigViewController.m */;
 		name = "NTLNConfigViewController.m: 209";
 		rLen = 72;
-		rLoc = 7393;
+		rLoc = 7386;
 		rType = 0;
 		vrLen = 1531;
 		vrLoc = 6372;
@@ -4216,7 +4261,7 @@
 		fRef = 8B8915F70F67A7A0004E7998 /* NTLNConfigViewController.m */;
 		name = "NTLNConfigViewController.m: 209";
 		rLen = 15;
-		rLoc = 7396;
+		rLoc = 7389;
 		rType = 0;
 		vrLen = 1455;
 		vrLoc = 6448;
@@ -4316,7 +4361,7 @@
 		fRef = 8B8915F70F67A7A0004E7998 /* NTLNConfigViewController.m */;
 		name = "NTLNConfigViewController.m: 211";
 		rLen = 20;
-		rLoc = 7500;
+		rLoc = 7493;
 		rType = 0;
 		vrLen = 1455;
 		vrLoc = 6448;
@@ -4336,7 +4381,7 @@
 		fRef = 8B8915F70F67A7A0004E7998 /* NTLNConfigViewController.m */;
 		name = "NTLNConfigViewController.m: 207";
 		rLen = 0;
-		rLoc = 7262;
+		rLoc = 7255;
 		rType = 0;
 		vrLen = 559;
 		vrLoc = 4796;
@@ -4356,7 +4401,7 @@
 		fRef = 8B8915F70F67A7A0004E7998 /* NTLNConfigViewController.m */;
 		name = "NTLNConfigViewController.m: 207";
 		rLen = 0;
-		rLoc = 7262;
+		rLoc = 7255;
 		rType = 0;
 		vrLen = 1455;
 		vrLoc = 6448;
@@ -4376,7 +4421,7 @@
 		fRef = 8B8915F70F67A7A0004E7998 /* NTLNConfigViewController.m */;
 		name = "NTLNConfigViewController.m: 207";
 		rLen = 0;
-		rLoc = 7262;
+		rLoc = 7255;
 		rType = 0;
 		vrLen = 559;
 		vrLoc = 4796;
@@ -5190,9 +5235,9 @@
 		path = "/Users/houyr/Dev/playground/iphone/finch-git/Classes/NTLNConfigViewController.m";
 		sourceTree = "<absolute>";
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1036, 4550}}";
-			sepNavSelRange = "{5810, 0}";
-			sepNavVisRange = "{5396, 1180}";
+			sepNavIntBoundsRect = "{{0, 0}, {1379, 4550}}";
+			sepNavSelRange = "{4836, 0}";
+			sepNavVisRange = "{4484, 492}";
 		};
 	};
 	8B8916930F67B7EC004E7998 /* NewAccountViewController.m */ = {
@@ -5445,7 +5490,7 @@
 		fRef = 8B8915F70F67A7A0004E7998 /* NTLNConfigViewController.m */;
 		name = "NTLNConfigViewController.m: 207";
 		rLen = 0;
-		rLoc = 7142;
+		rLoc = 7135;
 		rType = 0;
 		vrLen = 1370;
 		vrLoc = 6452;
@@ -5535,7 +5580,7 @@
 		fRef = 8B8916830F67B7D7004E7998 /* NTLNConfigViewController.m */;
 		name = "NTLNConfigViewController.m: 205";
 		rLen = 135;
-		rLoc = 6884;
+		rLoc = 6877;
 		rType = 0;
 		vrLen = 1141;
 		vrLoc = 6221;
@@ -5675,7 +5720,7 @@
 		fRef = 8B8916890F67B7DC004E7998 /* NTLNConfigViewController.m */;
 		name = "NTLNConfigViewController.m: 304";
 		rLen = 66;
-		rLoc = 10685;
+		rLoc = 10678;
 		rType = 0;
 		vrLen = 971;
 		vrLoc = 9829;
@@ -5725,7 +5770,7 @@
 		fRef = 8B8916890F67B7DC004E7998 /* NTLNConfigViewController.m */;
 		name = "NTLNConfigViewController.m: 304";
 		rLen = 66;
-		rLoc = 10685;
+		rLoc = 10678;
 		rType = 0;
 		vrLen = 971;
 		vrLoc = 9829;
@@ -6112,7 +6157,7 @@
 		fRef = 8B8916890F67B7DC004E7998 /* NTLNConfigViewController.m */;
 		name = "NTLNConfigViewController.m: 304";
 		rLen = 66;
-		rLoc = 10685;
+		rLoc = 10678;
 		rType = 0;
 		vrLen = 1004;
 		vrLoc = 9796;
@@ -6312,7 +6357,7 @@
 		fRef = 8B8916890F67B7DC004E7998 /* NTLNConfigViewController.m */;
 		name = "NTLNConfigViewController.m: 178";
 		rLen = 0;
-		rLoc = 5845;
+		rLoc = 5838;
 		rType = 0;
 		vrLen = 1046;
 		vrLoc = 5379;
@@ -6322,7 +6367,7 @@
 		fRef = 8B8916890F67B7DC004E7998 /* NTLNConfigViewController.m */;
 		name = "NTLNConfigViewController.m: 178";
 		rLen = 0;
-		rLoc = 5845;
+		rLoc = 5838;
 		rType = 0;
 		vrLen = 1063;
 		vrLoc = 5379;
@@ -6342,7 +6387,7 @@
 		fRef = 8B8916890F67B7DC004E7998 /* NTLNConfigViewController.m */;
 		name = "NTLNConfigViewController.m: 178";
 		rLen = 0;
-		rLoc = 5845;
+		rLoc = 5838;
 		rType = 0;
 		vrLen = 1063;
 		vrLoc = 5379;
@@ -6472,7 +6517,7 @@
 		fRef = 8B8916890F67B7DC004E7998 /* NTLNConfigViewController.m */;
 		name = "NTLNConfigViewController.m: 178";
 		rLen = 0;
-		rLoc = 5845;
+		rLoc = 5838;
 		rType = 0;
 		vrLen = 1075;
 		vrLoc = 5377;
@@ -6492,7 +6537,7 @@
 		fRef = 8B8916890F67B7DC004E7998 /* NTLNConfigViewController.m */;
 		name = "NTLNConfigViewController.m: 178";
 		rLen = 0;
-		rLoc = 5810;
+		rLoc = 5803;
 		rType = 0;
 		vrLen = 1055;
 		vrLoc = 5377;
@@ -6562,7 +6607,7 @@
 		fRef = 8B8916890F67B7DC004E7998 /* NTLNConfigViewController.m */;
 		name = "NTLNConfigViewController.m: 178";
 		rLen = 0;
-		rLoc = 5810;
+		rLoc = 5803;
 		rType = 0;
 		vrLen = 1180;
 		vrLoc = 5396;
@@ -6689,7 +6734,7 @@
 		fRef = 8B8916890F67B7DC004E7998 /* NTLNConfigViewController.m */;
 		name = "NTLNConfigViewController.m: 178";
 		rLen = 0;
-		rLoc = 5810;
+		rLoc = 5803;
 		rType = 0;
 		vrLen = 1055;
 		vrLoc = 5377;
@@ -6819,7 +6864,7 @@
 		fRef = 8B8916890F67B7DC004E7998 /* NTLNConfigViewController.m */;
 		name = "NTLNConfigViewController.m: 178";
 		rLen = 0;
-		rLoc = 5810;
+		rLoc = 5803;
 		rType = 0;
 		vrLen = 1220;
 		vrLoc = 6245;
@@ -6839,7 +6884,7 @@
 		fRef = 8B8916890F67B7DC004E7998 /* NTLNConfigViewController.m */;
 		name = "NTLNConfigViewController.m: 178";
 		rLen = 0;
-		rLoc = 5810;
+		rLoc = 5803;
 		rType = 0;
 		vrLen = 1180;
 		vrLoc = 5396;
@@ -7226,9 +7271,9 @@
 		path = "/Users/houyr/Dev/playground/iphone/finch-git/Classes/models/NTLNTwitterClient.m";
 		sourceTree = "<absolute>";
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1036, 3304}}";
-			sepNavSelRange = "{2308, 0}";
-			sepNavVisRange = "{2035, 886}";
+			sepNavIntBoundsRect = "{{0, 0}, {1036, 3234}}";
+			sepNavSelRange = "{254, 0}";
+			sepNavVisRange = "{717, 1181}";
 		};
 	};
 	8B8917B80F67C1A7004E7998 /* PBXTextBookmark */ = {
@@ -7410,9 +7455,9 @@
 		path = "/Users/houyr/Dev/playground/iphone/finch-git/Classes/models/AccountManager.m";
 		sourceTree = "<absolute>";
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1379, 1820}}";
-			sepNavSelRange = "{2028, 0}";
-			sepNavVisRange = "{1911, 452}";
+			sepNavIntBoundsRect = "{{0, 0}, {1036, 1720}}";
+			sepNavSelRange = "{2797, 21}";
+			sepNavVisRange = "{2234, 988}";
 		};
 	};
 	8B8917D90F67C1EC004E7998 /* PBXTextBookmark */ = {
@@ -7906,6 +7951,432 @@
 		vrLen = 760;
 		vrLoc = 0;
 	};
+	8B8918130F67CA27004E7998 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 8B1A7AD40F63922E00E7DE1A /* NTLNTimelineViewControllerCache.m */;
+		name = "NTLNTimelineViewControllerCache.m: 11";
+		rLen = 45;
+		rLoc = 219;
+		rType = 0;
+		vrLen = 760;
+		vrLoc = 0;
+	};
+	8B8918140F67CA27004E7998 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 8B1A7E2A0F653F3D00E7DE1A /* NTLNTimelineViewControllerClient.m */;
+		name = "NTLNTimelineViewControllerClient.m: 183";
+		rLen = 73;
+		rLoc = 4712;
+		rType = 0;
+		vrLen = 733;
+		vrLoc = 354;
+	};
+	8B8918150F67CA27004E7998 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 8DC3F3470E6198650045A4AD /* NTLNTwitterClient.h */;
+		name = "NTLNTwitterClient.h: 8";
+		rLen = 17;
+		rLoc = 178;
+		rType = 0;
+		vrLen = 1022;
+		vrLoc = 0;
+	};
+	8B8918160F67CA27004E7998 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 8B8917B70F67C1A7004E7998 /* NTLNTwitterClient.m */;
+		name = "NTLNTwitterClient.m: 11";
+		rLen = 0;
+		rLoc = 254;
+		rType = 0;
+		vrLen = 1181;
+		vrLoc = 717;
+	};
+	8B8918170F67CA27004E7998 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 8D988F970E841D6300AA6845 /* NTLNTwitterUserClient.h */;
+		name = "NTLNTwitterUserClient.h: 5";
+		rLen = 0;
+		rLoc = 102;
+		rType = 0;
+		vrLen = 640;
+		vrLoc = 0;
+	};
+	8B8918180F67CA27004E7998 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 8DC3F34A0E6198650045A4AD /* NTLNHttpClient.h */;
+		name = "NTLNHttpClient.h: 13";
+		rLen = 113;
+		rLoc = 362;
+		rType = 0;
+		vrLen = 653;
+		vrLoc = 0;
+	};
+	8B8918190F67CA27004E7998 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 8B1A7AD40F63922E00E7DE1A /* NTLNTimelineViewControllerCache.m */;
+		name = "NTLNTimelineViewControllerCache.m: 11";
+		rLen = 45;
+		rLoc = 219;
+		rType = 0;
+		vrLen = 760;
+		vrLoc = 0;
+	};
+	8B89181A0F67CA27004E7998 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 8B1A7E2A0F653F3D00E7DE1A /* NTLNTimelineViewControllerClient.m */;
+		name = "NTLNTimelineViewControllerClient.m: 183";
+		rLen = 73;
+		rLoc = 4712;
+		rType = 0;
+		vrLen = 733;
+		vrLoc = 354;
+	};
+	8B89181B0F67CA27004E7998 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 8B8917B70F67C1A7004E7998 /* NTLNTwitterClient.m */;
+		name = "NTLNTwitterClient.m: 11";
+		rLen = 0;
+		rLoc = 254;
+		rType = 0;
+		vrLen = 1018;
+		vrLoc = 115;
+	};
+	8B89181C0F67CA27004E7998 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 8DC3F3470E6198650045A4AD /* NTLNTwitterClient.h */;
+		name = "NTLNTwitterClient.h: 8";
+		rLen = 17;
+		rLoc = 178;
+		rType = 0;
+		vrLen = 1022;
+		vrLoc = 0;
+	};
+	8B89181D0F67CA27004E7998 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 8B8917B70F67C1A7004E7998 /* NTLNTwitterClient.m */;
+		name = "NTLNTwitterClient.m: 11";
+		rLen = 0;
+		rLoc = 254;
+		rType = 0;
+		vrLen = 1181;
+		vrLoc = 717;
+	};
+	8B89181E0F67CA27004E7998 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 8D988F970E841D6300AA6845 /* NTLNTwitterUserClient.h */;
+		name = "NTLNTwitterUserClient.h: 5";
+		rLen = 0;
+		rLoc = 102;
+		rType = 0;
+		vrLen = 640;
+		vrLoc = 0;
+	};
+	8B89181F0F67CA27004E7998 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 8DC3F34A0E6198650045A4AD /* NTLNHttpClient.h */;
+		name = "NTLNHttpClient.h: 13";
+		rLen = 113;
+		rLoc = 362;
+		rType = 0;
+		vrLen = 653;
+		vrLoc = 0;
+	};
+	8B8918200F67CA27004E7998 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 8DC3F3460E6198650045A4AD /* NTLNHttpClient.m */;
+		name = "NTLNHttpClient.m: 93";
+		rLen = 16;
+		rLoc = 2510;
+		rType = 0;
+		vrLen = 930;
+		vrLoc = 3170;
+	};
+	8B8918230F67CA27004E7998 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 8B1A7AD40F63922E00E7DE1A /* NTLNTimelineViewControllerCache.m */;
+		rLen = 1;
+		rLoc = 36;
+		rType = 1;
+	};
+	8B8918240F67CA27004E7998 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 8B1A7AD40F63922E00E7DE1A /* NTLNTimelineViewControllerCache.m */;
+		name = "NTLNTimelineViewControllerCache.m: 39";
+		rLen = 0;
+		rLoc = 1270;
+		rType = 0;
+		vrLen = 1331;
+		vrLoc = 0;
+	};
+	8B8918250F67CA3D004E7998 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 8B1A7AD40F63922E00E7DE1A /* NTLNTimelineViewControllerCache.m */;
+		name = "leak debuging";
+		rLen = 23;
+		rLoc = 1247;
+		rType = 0;
+		vrLen = 1333;
+		vrLoc = 0;
+	};
+	8B8918260F67CA44004E7998 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 8DC3F3460E6198650045A4AD /* NTLNHttpClient.m */;
+		name = "NTLNHttpClient.m: 93";
+		rLen = 16;
+		rLoc = 2510;
+		rType = 0;
+		vrLen = 930;
+		vrLoc = 3170;
+	};
+	8B8918290F67CB81004E7998 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 8DC3F3460E6198650045A4AD /* NTLNHttpClient.m */;
+		name = "NTLNHttpClient.m: 71";
+		rLen = 53;
+		rLoc = 1431;
+		rType = 0;
+		vrLen = 1183;
+		vrLoc = 1119;
+	};
+	8B89182A0F67CB81004E7998 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = F134232D0E12AE9F00F2AF64 /* NTLNConfigViewController.m */;
+		rLen = 8;
+		rLoc = 4988;
+		rType = 0;
+	};
+	8B89182B0F67CB81004E7998 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 8DC3F3460E6198650045A4AD /* NTLNHttpClient.m */;
+		name = "NTLNHttpClient.m: 71";
+		rLen = 53;
+		rLoc = 1431;
+		rType = 0;
+		vrLen = 1183;
+		vrLoc = 1119;
+	};
+	8B89182C0F67CB81004E7998 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 8B8916890F67B7DC004E7998 /* NTLNConfigViewController.m */;
+		name = "NTLNConfigViewController.m: 144";
+		rLen = 0;
+		rLoc = 4996;
+		rType = 0;
+		vrLen = 528;
+		vrLoc = 4715;
+	};
+	8B89182E0F67CBE2004E7998 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 8B8916890F67B7DC004E7998 /* NTLNConfigViewController.m */;
+		name = "NTLNConfigViewController.m: 139";
+		rLen = 23;
+		rLoc = 4900;
+		rType = 0;
+		vrLen = 528;
+		vrLoc = 4715;
+	};
+	8B8918340F67CC31004E7998 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 8B8916890F67B7DC004E7998 /* NTLNConfigViewController.m */;
+		name = "NTLNConfigViewController.m: 135";
+		rLen = 0;
+		rLoc = 4836;
+		rType = 0;
+		vrLen = 505;
+		vrLoc = 4715;
+	};
+	8B8918350F67CC47004E7998 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 8B1A7AD40F63922E00E7DE1A /* NTLNTimelineViewControllerCache.m */;
+		name = "NTLNTimelineViewControllerCache.m: 11";
+		rLen = 45;
+		rLoc = 219;
+		rType = 0;
+		vrLen = 486;
+		vrLoc = 61;
+	};
+	8B8918360F67CC47004E7998 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 8B8918370F67CC47004E7998 /* asm __dyld__dyld_start  0x2fe01028 */;
+		name = "asm __dyld__dyld_start  0x2fe01028: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 581;
+		vrLoc = 0;
+	};
+	8B8918370F67CC47004E7998 /* asm __dyld__dyld_start  0x2fe01028 */ = {
+		isa = PBXFileReference;
+		path = "asm __dyld__dyld_start  0x2fe01028";
+		sourceTree = "<group>";
+	};
+	8B8918380F67CC47004E7998 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 8B8918390F67CC47004E7998 /* asm __kill  0x3145dc50 */;
+		name = "asm __kill  0x3145dc50: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 375;
+		vrLoc = 0;
+	};
+	8B8918390F67CC47004E7998 /* asm __kill  0x3145dc50 */ = {
+		isa = PBXFileReference;
+		path = "asm __kill  0x3145dc50";
+		sourceTree = "<group>";
+	};
+	8B89183A0F67CC47004E7998 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 8B1A7AD40F63922E00E7DE1A /* NTLNTimelineViewControllerCache.m */;
+		name = "NTLNTimelineViewControllerCache.m: 11";
+		rLen = 45;
+		rLoc = 219;
+		rType = 0;
+		vrLen = 486;
+		vrLoc = 61;
+	};
+	8B89183B0F67CC47004E7998 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 8B89183C0F67CC47004E7998 /* asm __dyld__dyld_start  0x2fe01028 */;
+		name = "asm __dyld__dyld_start  0x2fe01028: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 581;
+		vrLoc = 0;
+	};
+	8B89183C0F67CC47004E7998 /* asm __dyld__dyld_start  0x2fe01028 */ = {
+		isa = PBXFileReference;
+		path = "asm __dyld__dyld_start  0x2fe01028";
+		sourceTree = "<group>";
+	};
+	8B89183D0F67CC47004E7998 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 8B8916890F67B7DC004E7998 /* NTLNConfigViewController.m */;
+		name = "NTLNConfigViewController.m: 135";
+		rLen = 0;
+		rLoc = 4836;
+		rType = 0;
+		vrLen = 287;
+		vrLoc = 4715;
+	};
+	8B89183E0F67CC4E004E7998 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 8B8916890F67B7DC004E7998 /* NTLNConfigViewController.m */;
+		name = "NTLNConfigViewController.m: 135";
+		rLen = 0;
+		rLoc = 4836;
+		rType = 0;
+		vrLen = 577;
+		vrLoc = 4442;
+	};
+	8B89183F0F67CC4E004E7998 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 8B1A76600F612F8200E7DE1A /* AccountManager.m */;
+		rLen = 21;
+		rLoc = 2797;
+		rType = 0;
+	};
+	8B8918400F67CC4E004E7998 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 8B8916890F67B7DC004E7998 /* NTLNConfigViewController.m */;
+		name = "NTLNConfigViewController.m: 135";
+		rLen = 0;
+		rLoc = 4836;
+		rType = 0;
+		vrLen = 577;
+		vrLoc = 4442;
+	};
+	8B8918410F67CC4E004E7998 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 8B8917D80F67C1DE004E7998 /* AccountManager.m */;
+		name = "AccountManager.m: 99";
+		rLen = 21;
+		rLoc = 2797;
+		rType = 0;
+		vrLen = 1010;
+		vrLoc = 2363;
+	};
+	8B8918490F67CD2A004E7998 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 8B8916890F67B7DC004E7998 /* NTLNConfigViewController.m */;
+		name = "NTLNConfigViewController.m: 135";
+		rLen = 0;
+		rLoc = 4836;
+		rType = 0;
+		vrLen = 492;
+		vrLoc = 4484;
+	};
+	8B89184A0F67CD2A004E7998 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 8B8917D80F67C1DE004E7998 /* AccountManager.m */;
+		name = "AccountManager.m: 99";
+		rLen = 0;
+		rLoc = 2788;
+		rType = 0;
+		vrLen = 620;
+		vrLoc = 2501;
+	};
+	8B89184B0F67CD2A004E7998 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 8B1A7DCB0F65285E00E7DE1A /* NTLNTimelineViewController.m */;
+		name = "NTLNTimelineViewController.m: 31";
+		rLen = 0;
+		rLoc = 659;
+		rType = 0;
+		vrLen = 431;
+		vrLoc = 1286;
+	};
+	8B89184C0F67CD2A004E7998 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 8B1A7E2A0F653F3D00E7DE1A /* NTLNTimelineViewControllerClient.m */;
+		name = "NTLNTimelineViewControllerClient.m: 201";
+		rLen = 0;
+		rLoc = 5339;
+		rType = 0;
+		vrLen = 574;
+		vrLoc = 5063;
+	};
+	8B89184D0F67CD2A004E7998 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 8B8917D80F67C1DE004E7998 /* AccountManager.m */;
+		name = "AccountManager.m: 99";
+		rLen = 0;
+		rLoc = 2873;
+		rType = 0;
+		vrLen = 618;
+		vrLoc = 2690;
+	};
+	8B89184E0F67CD2A004E7998 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 8B8917D80F67C1DE004E7998 /* AccountManager.m */;
+		name = "AccountManager.m: 99";
+		rLen = 0;
+		rLoc = 2788;
+		rType = 0;
+		vrLen = 620;
+		vrLoc = 2501;
+	};
+	8B89184F0F67CD2A004E7998 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 8B1A7DCB0F65285E00E7DE1A /* NTLNTimelineViewController.m */;
+		name = "NTLNTimelineViewController.m: 31";
+		rLen = 0;
+		rLoc = 659;
+		rType = 0;
+		vrLen = 431;
+		vrLoc = 1286;
+	};
+	8B8918500F67CD2A004E7998 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 8B1A7E2A0F653F3D00E7DE1A /* NTLNTimelineViewControllerClient.m */;
+		name = "NTLNTimelineViewControllerClient.m: 201";
+		rLen = 0;
+		rLoc = 5339;
+		rType = 0;
+		vrLen = 566;
+		vrLoc = 5063;
+	};
 	8BC3C7CC0F5C487D003B77E4 /* ntlniphAppDelegate.m:122 */ = {
 		isa = PBXFileBreakpoint;
 		actions = (
@@ -7920,7 +8391,7 @@
 		ignoreCount = 0;
 		lineNumber = 122;
 		location = Finch;
-		modificationTime = 258458013.671426;
+		modificationTime = 258461034.876267;
 		state = 2;
 	};
 	8BC3C7E90F5C4A76003B77E4 /* PBXTextBookmark */ = {
@@ -7947,7 +8418,7 @@
 		ignoreCount = 0;
 		lineNumber = 19;
 		location = Finch;
-		modificationTime = 258458013.671892;
+		modificationTime = 258461034.876931;
 		state = 2;
 	};
 	8BC3C7F50F5C4B2B003B77E4 /* PBXTextBookmark */ = {
@@ -8046,7 +8517,7 @@
 		ignoreCount = 0;
 		lineNumber = 11;
 		location = ntlniph;
-		modificationTime = 258458013.674034;
+		modificationTime = 258461034.877167;
 		state = 2;
 	};
 	8BC3C80B0F5C4B79003B77E4 /* PBXTextBookmark */ = {
@@ -8103,7 +8574,7 @@
 		ignoreCount = 0;
 		lineNumber = 42;
 		location = Finch;
-		modificationTime = 258458013.674244;
+		modificationTime = 258461034.877363;
 		state = 1;
 	};
 	8BC3C85E0F5C4D88003B77E4 /* PBXTextBookmark */ = {
@@ -8130,7 +8601,7 @@
 		ignoreCount = 0;
 		lineNumber = 31;
 		location = Finch;
-		modificationTime = 258458013.674426;
+		modificationTime = 258461034.877535;
 		state = 1;
 	};
 	8BC3C8C10F5C4F06003B77E4 /* NTLNTimelineViewController.m:59 */ = {
@@ -8147,7 +8618,7 @@
 		ignoreCount = 0;
 		lineNumber = 59;
 		location = ntlniph;
-		modificationTime = 258458013.67472;
+		modificationTime = 258461034.877751;
 		state = 2;
 	};
 	8BC3C8C30F5C4F11003B77E4 /* NTLNTimelineViewController.m:12 */ = {
@@ -8164,7 +8635,7 @@
 		ignoreCount = 0;
 		lineNumber = 12;
 		location = Finch;
-		modificationTime = 258458013.674912;
+		modificationTime = 258461034.877985;
 		state = 2;
 	};
 	8BC3C9230F5C515A003B77E4 /* NTLNTwitterClient.m:29 */ = {
@@ -8181,7 +8652,7 @@
 		ignoreCount = 0;
 		lineNumber = 29;
 		location = ntlniph;
-		modificationTime = 258458013.675144;
+		modificationTime = 258461034.878178;
 		state = 2;
 	};
 	8BC3C9250F5C5160003B77E4 /* NTLNHttpClient.m:97 */ = {
@@ -8198,7 +8669,7 @@
 		ignoreCount = 0;
 		lineNumber = 97;
 		location = ntlniph;
-		modificationTime = 258458013.675341;
+		modificationTime = 258461034.878368;
 		state = 2;
 	};
 	8BC3C9270F5C5163003B77E4 /* NTLNHttpClient.m:91 */ = {
@@ -8215,7 +8686,7 @@
 		ignoreCount = 0;
 		lineNumber = 91;
 		location = ntlniph;
-		modificationTime = 258458013.675552;
+		modificationTime = 258461034.878588;
 		state = 2;
 	};
 	8BC3C9300F5C5184003B77E4 /* PBXTextBookmark */ = {
@@ -8262,7 +8733,7 @@
 		ignoreCount = 0;
 		lineNumber = 190;
 		location = Finch;
-		modificationTime = 258458013.675751;
+		modificationTime = 258461034.878782;
 		state = 2;
 	};
 	8BC3C94F0F5C52C0003B77E4 /* NTLNUserTimelineViewController.m:41 */ = {
@@ -8279,7 +8750,7 @@
 		ignoreCount = 0;
 		lineNumber = 41;
 		location = Finch;
-		modificationTime = 258458013.675948;
+		modificationTime = 258461034.87928;
 		state = 2;
 	};
 	8BC3C9530F5C52D5003B77E4 /* NTLNFriendsViewController.m:68 */ = {
@@ -8296,7 +8767,7 @@
 		ignoreCount = 0;
 		lineNumber = 68;
 		location = ntlniph;
-		modificationTime = 258458013.676151;
+		modificationTime = 258461034.879481;
 		state = 2;
 	};
 	8BC3C9540F5C52F1003B77E4 /* PBXTextBookmark */ = {
@@ -8323,7 +8794,7 @@
 		ignoreCount = 0;
 		lineNumber = 142;
 		location = Finch;
-		modificationTime = 258458013.676382;
+		modificationTime = 258461034.879719;
 		state = 2;
 	};
 	8BC3C9680F5C53BA003B77E4 /* NTLNTimelineViewControllerClient.m:162 */ = {
@@ -8340,7 +8811,7 @@
 		ignoreCount = 0;
 		lineNumber = 162;
 		location = ntlniph;
-		modificationTime = 258458013.676577;
+		modificationTime = 258461034.879948;
 		state = 2;
 	};
 	8BC3C9730F5C53C8003B77E4 /* PBXTextBookmark */ = {
@@ -8383,7 +8854,7 @@
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {1036, 1736}}";
 			sepNavSelRange = "{396, 15}";
-			sepNavVisRange = "{109, 689}";
+			sepNavVisRange = "{109, 590}";
 		};
 	};
 	8D2B8F0D0E9E32EF00D073D8 /* NTLNTimelineViewController.m */ = {
@@ -8545,7 +9016,7 @@
 	};
 	8D988F970E841D6300AA6845 /* NTLNTwitterUserClient.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1036, 366}}";
+			sepNavIntBoundsRect = "{{0, 0}, {1036, 389}}";
 			sepNavSelRange = "{102, 0}";
 			sepNavVisRange = "{0, 640}";
 		};
@@ -8623,16 +9094,16 @@
 	};
 	8DC3F3460E6198650045A4AD /* NTLNHttpClient.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1036, 2408}}";
-			sepNavSelRange = "{2510, 16}";
-			sepNavVisRange = "{1929, 1241}";
+			sepNavIntBoundsRect = "{{0, 0}, {1036, 2450}}";
+			sepNavSelRange = "{1431, 53}";
+			sepNavVisRange = "{1119, 1183}";
 		};
 	};
 	8DC3F3470E6198650045A4AD /* NTLNTwitterClient.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1040, 518}}";
+			sepNavIntBoundsRect = "{{0, 0}, {1036, 518}}";
 			sepNavSelRange = "{178, 17}";
-			sepNavVisRange = "{0, 977}";
+			sepNavVisRange = "{0, 1022}";
 		};
 	};
 	8DC3F3480E6198650045A4AD /* NTLNIconDownloader.m */ = {
@@ -8644,8 +9115,8 @@
 	};
 	8DC3F34A0E6198650045A4AD /* NTLNHttpClient.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1036, 366}}";
-			sepNavSelRange = "{97, 33}";
+			sepNavIntBoundsRect = "{{0, 0}, {1036, 389}}";
+			sepNavSelRange = "{362, 113}";
 			sepNavVisRange = "{0, 653}";
 		};
 	};
@@ -8679,9 +9150,9 @@
 	};
 	8DEDE4C10E4646ED0094827B /* NTLNStatusCell.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1036, 3136}}";
-			sepNavSelRange = "{4401, 92}";
-			sepNavVisRange = "{3934, 959}";
+			sepNavIntBoundsRect = "{{0, 0}, {1036, 3150}}";
+			sepNavSelRange = "{4884, 7}";
+			sepNavVisRange = "{4399, 874}";
 		};
 	};
 	F10CCC5E0E0510450017B8C9 /* NTLNFriendsViewController.h */ = {
@@ -8855,9 +9326,10 @@
 	};
 	F1D471020E04A1B500E9CB1D /* NTLNFriendsViewController.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1036, 1358}}";
-			sepNavSelRange = "{781, 12}";
-			sepNavVisRange = "{281, 812}";
+			sepNavIntBoundsRect = "{{0, 0}, {861, 1344}}";
+			sepNavSelRange = "{827, 26}";
+			sepNavVisRange = "{0, 1495}";
+			sepNavWindowFrame = "{{15, -1}, {920, 874}}";
 		};
 	};
 	F1FB3C180E17055600534978 /* NTLNRefleshIntervalConfigViewController.h */ = {

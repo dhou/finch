@@ -141,7 +141,7 @@
 	switch (section)
 	{
 		case 0:
-			return @"Twitter Account";
+			return @"Accounts";
 	}
 	
 	return nil;
