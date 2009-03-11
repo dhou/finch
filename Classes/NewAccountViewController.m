@@ -186,17 +186,17 @@
 #pragma mark textfield delegate methods
 
 //TODO:save accounts to accountslist
-- (void)textFieldDidEndEditing:(UITextField *)textField {
-	NSString *t = [textField.text stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet]];
-	if (textField == usernameField) {
+//- (void)textFieldDidEndEditing:(UITextField *)textField {
+//	NSString *t = [textField.text stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet]];
+//	if (textField == usernameField) {
 		//[[NTLNAccount instance] setUsername:t];
 		//usernameEdited = YES;
-	} else if (textField == passwordField) {
+//	} else if (textField == passwordField) {
 		//[[NTLNAccount instance] setPassword:t];
-	}
+//	}
 	
 //	[friendsViewController removeLastReloadTime];
-}
+//}
 
 - (BOOL)textFieldShouldReturn:(UITextField *)textField {
 	[textField resignFirstResponder];

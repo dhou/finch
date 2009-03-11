@@ -63,6 +63,7 @@ static AccountManager *_instance;
 
 - (NTLNAccount *)getAccountAtIndex:(NSInteger) index{
 	NSLog(@"[%@]number of accounts: %d", [self className], [accountsList count]);
+	NSLog(@"index: %d, accounts: %d", index, [accountsList count]);
 	if(index < [accountsList count]) {
 		return [accountsList objectAtIndex:index];
 	} else {
@@ -75,15 +76,18 @@ static AccountManager *_instance;
 }
 
 - (NTLNAccount *)currentAccount {
+	if(currentAccountIndex == nil){
+		currentAccountIndex = 0;
+	}
 	return [accountsList objectAtIndex:currentAccountIndex];
 }
 
 // loads saved accounts
 -(void)loadAccounts {
-	NSLog(@"AccountManager loading accounts");
+	NSLog(@"[%@]Loading accounts", [self className]);
 	NSFileManager *fileManager = [NSFileManager defaultManager];
 	NSString *accountsArchivePath = [currentDirectoryPath stringByAppendingPathComponent:@"finch.accounts.archive"];
-	NSLog(@"AccountManager load archive path: %@", accountsArchivePath);
+	NSLog(@"[%@]Load archive path: %@", [self className], accountsArchivePath);
 	
 	if ([fileManager fileExistsAtPath:accountsArchivePath]) {
 		// set method will release, make mutable copy and retain
@@ -95,18 +99,12 @@ static AccountManager *_instance;
 		[self saveAccounts];
 	}
 	NSLog(@"AccountManager loaded %d accounts from archive", [self.accountsList count]);
-	NTLNAccount *a = [self getAccountAtIndex:0];
-	if (a) {
-		NSLog(@"AccountManager first account from archive: %@", a.username);			
-	}
-
-//	[a release];
 }
 
 - (void)saveAccounts {
-	NSLog(@"AccountManager saving accounts data");
+	NSLog(@"[%@]Saving accounts data", [self className]);
 	NSString *accountsFilePath = [currentDirectoryPath stringByAppendingPathComponent:@"finch.accounts.archive"];
-	NSLog(@"Archive path: %@", accountsFilePath);
+	NSLog(@"Save to archive path: %@", accountsFilePath);
 	if ([accountsList count] || ([[NSFileManager defaultManager] fileExistsAtPath:accountsFilePath])) {
 		[NSKeyedArchiver archiveRootObject:accountsList toFile:accountsFilePath];
 	} else {

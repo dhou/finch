@@ -24,8 +24,6 @@
 }
 
 - (id)initWithStyle:(UITableViewStyle)style {
-	//TODO: init iboutlet views programatically
-	NSLog(@"configview initwithstle");
 	if (self = [super initWithStyle:style]) {
 		self.navigationItem.title = @"Home";
 		aboutViewController = [[NTLNAboutViewController alloc] initWithStyle:UITableViewStyleGrouped];

@@ -15,6 +15,7 @@
 }
 
 @property (readonly) BOOL active;
+@property (retain) NSString *tmpTextForInitial;
 
 - (void)setSuperView:(UIView*)view;
 
@@ -25,7 +26,7 @@
 - (void)createReplyPost:(NSString*)text;
 - (void)createDMPost:(NSString*)reply_to;
 
-- (void)showWindow;
+//- (void)showWindow;
 - (void)closeWindow;
 
 @end

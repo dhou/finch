@@ -6,7 +6,7 @@
 
 @implementation NTLNTweetPostViewController
 
-@synthesize active;
+@synthesize active, tmpTextForInitial;
 
 - (void)setViewColors {
 	UIColor *textColor, *backgroundColor;
@@ -165,9 +165,8 @@
 	}
 }
 
-- (void)showWindow {
+- (void)viewWillAppear:(BOOL)animated {
 	active = YES;
-	[superView addSubview:self.view];
 	[self setViewColors];
 	if (tmpTextForInitial) {
 		[tweetTextView setText:tmpTextForInitial];
@@ -175,7 +174,20 @@
 		tmpTextForInitial = nil;
 	}
 	[tweetTextView becomeFirstResponder];
+	[super viewWillAppear:animated];
 }
+
+//- (void)showWindow {
+//	active = YES;
+//	[superView addSubview:self.view];
+//	[self setViewColors];
+//	if (tmpTextForInitial) {
+//		[tweetTextView setText:tmpTextForInitial];
+//		[tmpTextForInitial release];
+//		tmpTextForInitial = nil;
+//	}
+//	[tweetTextView becomeFirstResponder];
+//}
 
 - (void)closeWindow {
 	[self closeButtonPushed:self];
@@ -195,7 +207,8 @@
 
 - (IBAction)closeButtonPushed:(id)sender {
 	[tweetTextView resignFirstResponder];
-	[self.view removeFromSuperview];
+//	[self.view removeFromSuperview];
+	[[self parentViewController] dismissModalViewControllerAnimated:YES];
 	active = NO;
 }
 
@@ -209,7 +222,8 @@
 	[tc post:tweetTextView.text];
 	
 	[tweetTextView resignFirstResponder];
-	[self.view removeFromSuperview];
+//	[self.view removeFromSuperview];
+	[[self parentViewController] dismissModalViewControllerAnimated:YES];
 	active = NO;
 }
 

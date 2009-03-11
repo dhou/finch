@@ -15,7 +15,8 @@
 }
 
 - (void)postButton:(id)sender {
-	[tweetPostViewController showWindow];
+	
+//	[tweetPostViewController showWindow];
 }
 
 @end

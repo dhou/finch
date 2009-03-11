@@ -19,8 +19,6 @@
 @implementation SettingsViewController
 
 - (id)initWithStyle:(UITableViewStyle)style {
-	//TODO: init iboutlet views programatically
-	NSLog(@"configview initwithstle");
 	if (self = [super initWithStyle:style]) {
 		self.navigationItem.title = @"Settings";
 		refleshIntervalConfigViewController = [[NTLNRefleshIntervalConfigViewController alloc] initWithStyle:UITableViewStyleGrouped];

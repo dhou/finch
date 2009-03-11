@@ -21,7 +21,7 @@
 - (void)createViews {
 	tweetPostViewController = [[NTLNTweetPostViewController alloc] 
 									initWithNibName:@"TweetView" bundle:nil];
-	[tweetPostViewController setSuperView:tabBarController.view];
+//	[tweetPostViewController setSuperView:tabBarController.view];
 	
 	browserViewController = [[NTLNBrowserViewController alloc] init];
 
@@ -57,29 +57,40 @@
 //	UINavigationController *nset = [[[UINavigationController alloc] 
 //										initWithRootViewController:configViewController] autorelease];
 	
+//	[tabBarController setViewControllers:
+//		[NSArray arrayWithObjects:friendsViewController, replysViewController, sentsViewController, unreadsViewController, nil]];
 	[tabBarController setViewControllers:
-		[NSArray arrayWithObjects:nfri, nrep, nsen, nunr, nil]];
+	 [NSArray arrayWithObjects:nfri, nrep, nsen, nunr, nil]];
+//	[tabBarController navigationItem].titleView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"friends.png"]];
 	
 	navController = [[UINavigationController alloc] initWithRootViewController:configViewController];
-	[navController.navigationBar setBarStyle:UIBarStyleBlackTranslucent];
+	[navController.navigationBar setBarStyle:UIBarStyleBlackOpaque];
 	
-	[nfri.navigationBar setBarStyle:UIBarStyleBlackTranslucent];
+//	[nfri.navigationBar setBarStyle:UIBarStyleBlackTranslucent];
 	[nfri.tabBarItem setTitle:@"Friends"];
 	[nfri.tabBarItem setImage:[UIImage imageNamed:@"friends.png"]];
-	friendsViewController.tabBarItem = nfri.tabBarItem; // is it need (to show badge)?
-	
-	[nrep.navigationBar setBarStyle:UIBarStyleBlackTranslucent];
+//	friendsViewController.tabBarItem = nfri.tabBarItem; // is it need (to show badge)?
+//	friendsViewController.tabBarItem.image = [UIImage imageNamed:@"friends.png"];
+//	friendsViewController.tabBarItem.title = @"Friends";
+//	
+//	[nrep.navigationBar setBarStyle:UIBarStyleBlackTranslucent];
 	[nrep.tabBarItem setTitle:@"Replies"];
 	[nrep.tabBarItem setImage:[UIImage imageNamed:@"replies.png"]];
-	replysViewController.tabBarItem  = nrep.tabBarItem; // is it need (to show badge)?
-
-	[nsen.navigationBar setBarStyle:UIBarStyleBlackTranslucent];
+//	replysViewController.tabBarItem  = nrep.tabBarItem; // is it need (to show badge)?
+//	replysViewController.tabBarItem.image = [UIImage imageNamed:@"replies.png"];
+//	replysViewController.tabBarItem.title = @"Replies";
+//
+//	[nsen.navigationBar setBarStyle:UIBarStyleBlackTranslucent];
 	[nsen.tabBarItem setTitle:@"Sents"];
 	[nsen.tabBarItem setImage:[UIImage imageNamed:@"sent.png"]];
-
-	[nunr.navigationBar setBarStyle:UIBarStyleBlackTranslucent];
+//	sentsViewController.tabBarItem.image = [UIImage imageNamed:@"sent.png"];
+//	sentsViewController.tabBarItem.title = @"Sents";
+//
+//	[nunr.navigationBar setBarStyle:UIBarStyleBlackTranslucent];
 	[nunr.tabBarItem setTitle:@"Unreads"];
 	[nunr.tabBarItem setImage:[UIImage imageNamed:@"unread.png"]];
+//	unreadsViewController.tabBarItem.image = [UIImage imageNamed:@"unread.png"];
+//	unreadsViewController.tabBarItem.title = @"Unreads";
 	
 //	[nset.navigationBar setBarStyle:UIBarStyleBlackTranslucent];
 //	[nset.tabBarItem setTitle:@"Settings"];
@@ -96,10 +107,10 @@
 //		tabBarController.selectedIndex = 0; // friends view
 //	}
 	
-	NSString *user_id = [[NTLNAccount instance] userId];
-	if (user_id == nil || [user_id length] == 0) {
-		[[NTLNAccount instance] retrieveUserId];
-	}
+//	NSString *user_id = [[NTLNAccount instance] userId];
+//	if (user_id == nil || [user_id length] == 0) {
+//		[[NTLNAccount instance] retrieveUserId];
+//	}
 	
 	[window addSubview:navController.view];
 	[window makeKeyAndVisible];
@@ -140,6 +151,10 @@
 	[replysViewController resetTimeline];
 	[sentsViewController resetTimeline];
 	[unreadsViewController resetTimeline];
+}
+
+- (void)showTweetView {
+	[navController presentModalViewController:tweetPostViewController animated:YES];
 }
 
 - (void)tabBarController:(UITabBarController *)tabBarController 

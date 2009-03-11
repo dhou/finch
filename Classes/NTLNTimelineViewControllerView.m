@@ -2,6 +2,8 @@
 #import "NTLNConfiguration.h"
 #import "NTLNColors.h"
 
+#define kCustomButtonHeight		30.0
+
 @interface NTLNTimelineViewController(Private)
 - (UIView*)showMoreTweetView;
 - (UIView*)nowloadingView;
@@ -70,12 +72,49 @@
 }
 
 - (void)setupNavigationBar {
+	[self.navigationController setNavigationBarHidden:YES animated:NO];
 	
-	reloadButton = [[UIBarButtonItem alloc] 
-					initWithBarButtonSystemItem:UIBarButtonSystemItemRefresh 
-					target:self action:@selector(reloadButton:)];
+	// "Segmented" control to the right
+	UISegmentedControl *segmentedControl = [[[UISegmentedControl alloc] initWithItems:
+											 [NSArray arrayWithObjects:
+											  @"New",
+											  @"Reload",
+											  nil]] autorelease];
+	[segmentedControl addTarget:self action:@selector(segmentAction:) forControlEvents:UIControlEventValueChanged];
+	segmentedControl.frame = CGRectMake(0, 0, 90, kCustomButtonHeight);
+	segmentedControl.segmentedControlStyle = UISegmentedControlStyleBar;
+	segmentedControl.momentary = YES;
+	segmentedControl.tintColor = [UIColor darkGrayColor];
 	
-	[[self navigationItem] setRightBarButtonItem:reloadButton];
+//	defaultTintColor = [segmentedControl.tintColor retain];	// keep track of this for later
+	
+	UIBarButtonItem *segmentBarItem = [[[UIBarButtonItem alloc] initWithCustomView:segmentedControl] autorelease];
+	self.tabBarController.navigationItem.rightBarButtonItem = segmentBarItem;
+	
+//	reloadButton = [[UIBarButtonItem alloc] 
+//					initWithBarButtonSystemItem:UIBarButtonSystemItemRefresh 
+//					target:self action:@selector(reloadButton:)];
+//	
+//	[[[self tabBarController] navigationItem] setRightBarButtonItem:reloadButton];
+}
+
+- (void)segmentAction:(id)sender
+{
+	UISegmentedControl* segCtl = sender;
+	// the segmented control was clicked, handle it here 
+	NSLog(@"segment clicked %d", [segCtl selectedSegmentIndex]);
+	if([segCtl selectedSegmentIndex] == 0){
+		//new tweet
+//		NTLNAppDelegate* appDelegate = (NTLNAppDelegate*)[UIApplication sharedApplication].delegate;
+		[appDelegate showTweetView];
+	} else {
+		//reload view
+		if (activeTwitterClient == nil) {
+			[self getTimelineWithPage:0 autoload:NO];
+		} else {
+			[activeTwitterClient cancel];
+		}
+	}
 }
 
 - (void)insertNowloadingViewIfNeeds {
@@ -107,6 +146,7 @@
 }
 
 -(IBAction)reloadButton:(id)sender {
+	NSLog(@"[%@]reload button clicked", [self className]);
 	if (activeTwitterClient == nil) {
 		[self getTimelineWithPage:0 autoload:NO];
 	} else {

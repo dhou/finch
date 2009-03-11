@@ -203,15 +203,16 @@
 }
 
 - (void)replyButtonAction:(id)sender {
-	[[self navigationController].view addSubview:tweetPostViewController.view];
+//	[[self navigationController].view addSubview:tweetPostViewController.view];
 	
 	if (message.replyType == NTLN_MESSAGE_REPLY_TYPE_DIRECT) {
-		[tweetPostViewController createDMPost:message.screenName];
+		[appDelegate.tweetPostViewController createDMPost:message.screenName];
 	} else {
-		[tweetPostViewController createReplyPost:[@"@" stringByAppendingString:message.screenName]];
+		[appDelegate.tweetPostViewController createReplyPost:[@"@" stringByAppendingString:message.screenName]];
 	}
 	
-	[tweetPostViewController showWindow];
+//	[tweetPostViewController showWindow];
+	[appDelegate showTweetView];
 }
 
 - (CGFloat)getTextboxHeight:(NSString *)str

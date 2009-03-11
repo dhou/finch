@@ -77,7 +77,7 @@
 	lvc.appDelegate = appDelegate;
 	lvc.tweetPostViewController = tweetPostViewController;
 	lvc.message = s.message;
-	[[self navigationController] pushViewController:lvc animated:YES];
+	[[[self tabBarController] navigationController] pushViewController:lvc animated:YES];
 }
 
 @end

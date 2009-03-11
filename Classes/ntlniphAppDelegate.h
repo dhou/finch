@@ -36,6 +36,7 @@
 @property (readonly) NTLNTweetPostViewController *tweetPostViewController;
 
 - (void)resetTimelines;
+- (void)showTweetView;
 
 @end
 

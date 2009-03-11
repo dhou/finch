@@ -19,7 +19,6 @@
 	}
 }
 
-//TODO: study caching mechanism
 - (void)loadCache {
 	[self loadCacheWithFilename:xmlCachePath];
 }
